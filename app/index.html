@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cost of delay explorer</title>
+<meta name="description" content="Interactive supplement to a study that ranks classical hacking risk and post-quantum risk on one list, in dollars per year of delay.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#explorer">Skip to the explorer</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Interactive supplement</p>
+    <h1>Cost of delay explorer</h1>
+    <p class="subtitle">Ranking classical hacking risk and post-quantum risk on one list, in dollars lost per year of waiting.</p>
+    <p class="abstract">Data sent over the internet today can be recorded now and unlocked later, once a quantum computer exists. Whether that matters depends on how long the data must stay secret, whether it can be recorded, and whether a hacker would have taken it first. This page lets you change each of those and watch the ranking move. Every input is explained in the margin as you touch it.</p>
+    <p class="masthead-links">
+      <a href="https://github.com/AnimeshShaw/pqc-cost-of-delay/blob/main/methodology/FORMAL_METHOD.md">Proofs</a>
+      <a href="https://github.com/AnimeshShaw/pqc-cost-of-delay/blob/main/methodology/PARAMETERS.md">Where the numbers come from</a>
+      <a href="https://github.com/AnimeshShaw/pqc-cost-of-delay/blob/main/methodology/STATISTICS.md">Statistics</a>
+      <a href="https://github.com/AnimeshShaw/pqc-cost-of-delay">Code and data</a>
+      <button type="button" id="theme" class="textbutton" aria-pressed="false">Switch theme</button>
+    </p>
+  </div>
+</header>
+
+<div class="page">
+
+  <nav class="toc" aria-label="On this page">
+    <ol id="tocList">
+      <li><a href="#race">The race</a></li>
+      <li><a href="#system">Choose a system</a></li>
+      <li><a href="#assumptions">Assumptions</a></li>
+      <li><a href="#result">The ranking</a></li>
+      <li><a href="#sensitivity">Where the order changes</a></li>
+      <li><a href="#uncertainty">If the inputs are wrong</a></li>
+      <li><a href="#assets">Edit the assets</a></li>
+      <li><a href="#limits">What this does not show</a></li>
+    </ol>
+  </nav>
+
+  <main id="explorer" class="main">
+
+    <section id="race" aria-labelledby="race-h">
+      <h2 id="race-h">Two clocks, one piece of data</h2>
+      <p>A piece of data is exposed to two threats at once. A hacker might take it, at some unknown moment. A quantum computer might arrive, at some unknown moment. The quantum computer only adds a loss if it arrives while the data still matters <em>and</em> the hacker has not already taken it. The orange area below is that chance.</p>
+
+      <div class="controls" role="group" aria-label="Race controls">
+        <div class="control" data-help="lifetime">
+          <label for="raceL">Years the data must stay secret</label>
+          <input id="raceL" type="range" min="0" max="100" step="0.5" value="62">
+          <output id="raceLout" for="raceL"></output>
+        </div>
+        <div class="control" data-help="likelihood">
+          <label for="raceLam">How often hackers take it, per year</label>
+          <input id="raceLam" type="range" min="0" max="100" step="0.5" value="38">
+          <output id="raceLamOut" for="raceLam"></output>
+        </div>
+        <fieldset class="control" data-help="scenario">
+          <legend>When a quantum computer arrives</legend>
+          <div class="segmented" id="raceScen" role="radiogroup" aria-label="Arrival scenario"></div>
+        </fieldset>
+      </div>
+
+      <figure class="figure">
+        <svg id="raceSvg" role="img" aria-labelledby="raceTitle raceDesc" viewBox="0 0 760 310" preserveAspectRatio="xMidYMid meet"></svg>
+        <figcaption id="raceCaption"></figcaption>
+      </figure>
+
+      <div id="raceReadout" class="readout" aria-live="polite"></div>
+
+      <details class="formula">
+        <summary>The formula behind the orange area</summary>
+        <p>For an asset, the cost of waiting one more year has a classical part and a quantum part, both in dollars per year:</p>
+        <p class="eq"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>CoD</mi><mi>c</mi></msub><mo>=</mo><mi>λ</mi><mi>V</mi></mrow></math></p>
+        <p class="eq"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>CoD</mi><mi>q</mi></msub><mo>=</mo><mi>r</mi><mspace width="0.2em"/><mi>h</mi><msubsup><mo>∫</mo><mn>0</mn><mi>L</mi></msubsup><msub><mi>f</mi><mi>Q</mi></msub><mo>(</mo><mi>t</mi><mo>)</mo><mspace width="0.2em"/><msup><mi>e</mi><mrow><mo>−</mo><mo>(</mo><mi>λ</mi><mo>+</mo><mi>ρ</mi><mo>)</mo><mi>t</mi></mrow></msup><mspace width="0.2em"/><mi>d</mi><mi>t</mi></mrow></math></p>
+        <p>Here <i>V</i> is the loss if the data is exposed, <i>λ</i> the hacker rate, <i>r</i> = <i>τV</i> the value that newly flows each year (turnover <i>τ</i>), <i>h</i> the share that can be recorded, <i>L</i> the years the data must stay secret, <i>f<sub>Q</sub></i> the chance density of the quantum computer arriving, and <i>ρ</i> the discount. The factor <i>e</i><sup>−<i>λt</i></sup> is the chance the hacker has not struck by time <i>t</i>: the race. Everything is proved in <a href="https://github.com/AnimeshShaw/pqc-cost-of-delay/blob/main/methodology/FORMAL_METHOD.md">the methodology notes</a>.</p>
+      </details>
+    </section>
+
+    <section id="system" aria-labelledby="system-h">
+      <h2 id="system-h">Choose a system</h2>
+      <p>Four public systems, each described by a short list of kinds of data. The values are assumptions read from public documentation; nobody supplied real figures. You can edit any of them further down.</p>
+      <div id="systemList" class="systemlist" role="radiogroup" aria-label="System" data-help="system"></div>
+    </section>
+
+    <section id="assumptions" aria-labelledby="assumptions-h">
+      <h2 id="assumptions-h">Assumptions nobody can know for sure</h2>
+      <div class="controls" role="group" aria-label="Global assumptions">
+        <fieldset class="control" data-help="scenario">
+          <legend>When a quantum computer arrives</legend>
+          <div class="segmented" id="scen" role="radiogroup" aria-label="Arrival scenario for the ranking"></div>
+          <div id="yearBox" hidden>
+            <label for="year">Median arrival year</label>
+            <input id="year" type="range" min="2029" max="2050" value="2036">
+            <output id="yearOut" for="year">2036</output>
+          </div>
+          <p class="hint" id="scenHint"></p>
+        </fieldset>
+        <div class="control" data-help="rho">
+          <label for="rho">How much to shrink losses that appear far in the future</label>
+          <input id="rho" type="range" min="0" max="10" step="1" value="0">
+          <output id="rhoOut" for="rho">0%</output>
+        </div>
+      </div>
+    </section>
+
+    <section id="result" aria-labelledby="result-h">
+      <h2 id="result-h">The ranking</h2>
+      <p id="summary" class="lede" aria-live="polite"></p>
+      <div class="tablewrap">
+        <table class="ledger" id="ledger">
+          <caption class="sr">Assets ranked by cost of delay, with classical cost to the left and quantum cost to the right</caption>
+          <thead>
+            <tr><th scope="col" class="num">Rank</th><th scope="col">Asset</th><th scope="col" class="barcol">Cost of delay per year</th><th scope="col" class="num">Total</th><th scope="col" class="num">Against a hacker-only list</th></tr>
+          </thead>
+          <tbody id="ledgerBody"></tbody>
+        </table>
+      </div>
+      <p class="legend"><span class="swatch classical"></span>Classical: hackers take the data, to the left. <span class="swatch quantum"></span>Quantum: recorded now and opened later, to the right. Bars are on a log scale from $1k to $40M; nothing is drawn below $1k. Select an asset's name to see how its numbers were made.</p>
+    </section>
+
+    <section id="sensitivity" aria-labelledby="sensitivity-h">
+      <h2 id="sensitivity-h">Where the order changes</h2>
+      <p>Nobody knows the date a quantum computer arrives, or the right discount. If the order is the same everywhere below, those guesses do not decide anything. If it changes, that boundary is the uncertainty that matters. Entries that differ from the first row are underlined.</p>
+      <div class="tablewrap"><table class="plain" id="sensYears"></table></div>
+      <div class="tablewrap"><table class="plain" id="sensRho"></table></div>
+      <p id="sensVerdict" class="lede" aria-live="polite"></p>
+    </section>
+
+    <section id="uncertainty" aria-labelledby="uncertainty-h">
+      <h2 id="uncertainty-h">If the inputs are wrong</h2>
+      <p>Every input is a rough band. This re-draws all of them 2,000 times, each within a sensible range, and counts how often each conclusion survives. It runs in your browser and takes a second or two.</p>
+      <p><button type="button" id="runMc" class="button">Run 2,000 what-if worlds</button> <span id="mcStatus" class="hint" aria-live="polite"></span></p>
+      <figure class="figure" id="mcFigure" hidden>
+        <svg id="mcSvg" role="img" aria-label="Range of ranks for each asset across the what-if worlds" viewBox="0 0 760 100"></svg>
+        <figcaption>For each asset, the range of rank it takes in 90% of the what-if worlds. The dot is its typical rank; the hollow mark is its rank in a hacker-only list.</figcaption>
+      </figure>
+      <div id="mcSummary" class="lede" aria-live="polite"></div>
+      <details class="formula" id="mcRanges">
+        <summary>How far each input is allowed to wander</summary>
+        <table class="plain compact">
+          <thead><tr><th scope="col">Input</th><th scope="col">Range used</th></tr></thead>
+          <tbody>
+            <tr><td>Loss</td><td>up or down by half a band (a factor of about 3)</td></tr>
+            <tr><td>Hacker rate</td><td>up to twice or half</td></tr>
+            <tr><td>Years of secrecy</td><td>up to 1.5 times or a third shorter</td></tr>
+            <tr><td>Recordable share</td><td>plus or minus 0.1 (a zero stays zero)</td></tr>
+            <tr><td>Turnover (the weakest input)</td><td>up to three times or a third</td></tr>
+            <tr><td>Quantum arrival</td><td>the faster or slower view, equally likely</td></tr>
+            <tr><td>Discount</td><td>anywhere from 0% to 7%</td></tr>
+          </tbody>
+        </table>
+        <p>These ranges are themselves assumptions. See <a href="https://github.com/AnimeshShaw/pqc-cost-of-delay/blob/main/methodology/STATISTICS.md">the statistics notes</a>.</p>
+      </details>
+    </section>
+
+    <section id="assets" aria-labelledby="assets-h">
+      <h2 id="assets-h">Edit the assets</h2>
+      <p>Each row is a kind of data. Select any field and the margin explains what it means and how to choose. Everything above updates as you type.</p>
+      <div class="tablewrap">
+        <table class="editor" id="editor">
+          <caption class="sr">Editable list of assets</caption>
+        </table>
+      </div>
+      <p class="actions">
+        <button type="button" id="addRow" class="button">Add an asset</button>
+        <button type="button" id="resetRows" class="button secondary">Reset to the study's values</button>
+        <button type="button" id="download" class="button secondary">Download as CSV</button>
+      </p>
+    </section>
+
+    <section id="limits" aria-labelledby="limits-h">
+      <h2 id="limits-h">What this does not show</h2>
+      <ul class="limits">
+        <li>The inputs are assumptions drawn from public documents. No organisation supplied data, and nothing here has been checked against real incidents or migrations.</li>
+        <li>The weakest inputs are turnover and the recordable share. No published source gives them for these systems.</li>
+        <li>The arrival curve is fitted through two published points and extended beyond 15 years, where most long-lived data sits.</li>
+        <li>It scores secrecy only. Data being changed or made unavailable is a different risk.</li>
+        <li>Hackers and quantum computers are assumed to act independently.</li>
+        <li>Being first in this ranking means being first <em>in the model</em>. Use it to see how a ranking behaves, not to set a real budget.</li>
+      </ul>
+      <p class="fine">The scoring maths on this page is a JavaScript port of the Python reference implementation and is checked against it on 577 values. It runs entirely in your browser and sends nothing anywhere.</p>
+    </section>
+  </main>
+
+  <aside class="gloss" id="gloss" aria-label="Margin notes" aria-live="polite">
+    <div id="glossBody"></div>
+  </aside>
+</div>
+
+<script src="costofdelay.js"></script>
+<script src="data.js"></script>
+<script src="help.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

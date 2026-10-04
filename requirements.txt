@@ -1,0 +1,8 @@
+# Minimum versions. Exact tested versions are in requirements-lock.txt.
+# The scoring core (costofdelay/scoring.py, crqc.py, model.py) uses only the standard library;
+# these packages are needed for the statistics, figures, tests and verification scripts.
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+sympy>=1.12
+pytest>=8

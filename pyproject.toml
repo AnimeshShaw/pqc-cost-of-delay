@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "costofdelay"
+version = "0.1.0"
+description = "Cost-of-delay prioritisation of post-quantum migration: classical and harvest-now-decrypt-later risk in one unit (USD per year)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Animesh Shaw" }]
+dependencies = []          # the reference implementation uses only the standard library
+
+[project.optional-dependencies]
+analysis = ["numpy>=1.26", "scipy>=1.11", "matplotlib>=3.8", "statsmodels>=0.14"]
+dev = ["pytest>=8", "sympy>=1.12"]
+
+[tool.setuptools.packages.find]
+include = ["costofdelay*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

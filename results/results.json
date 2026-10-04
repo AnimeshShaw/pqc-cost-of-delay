@@ -1,0 +1,2715 @@
+{
+ "systems": {
+  "mosip": {
+   "title": "MOSIP",
+   "blurb": "National identity platform",
+   "n_assets": 9,
+   "n_pairs": 36,
+   "median_lifetime": 50.0,
+   "unified": [
+    "M03",
+    "M02",
+    "M04",
+    "M01",
+    "M07",
+    "M08",
+    "M05",
+    "M06",
+    "M09"
+   ],
+   "classical_only": [
+    "M02",
+    "M04",
+    "M01",
+    "M07",
+    "M08",
+    "M03",
+    "M05",
+    "M06",
+    "M09"
+   ],
+   "qars": [
+    "M03",
+    "M04",
+    "M01",
+    "M02",
+    "M07",
+    "M08",
+    "M06",
+    "M05",
+    "M09"
+   ],
+   "pairs_differing": 5,
+   "tau_classical": 0.7222222222222222,
+   "tau_qars": 0.8333333333333334,
+   "quantum_dominant": [
+    "M03",
+    "M01",
+    "M07",
+    "M08"
+   ],
+   "n_quantum_dominant": 4,
+   "n_nonzero_quantum": 8,
+   "scenarios": {
+    "2032": [
+     "M03",
+     "M02",
+     "M04",
+     "M01",
+     "M07",
+     "M08",
+     "M05",
+     "M06",
+     "M09"
+    ],
+    "2035": [
+     "M03",
+     "M02",
+     "M04",
+     "M01",
+     "M07",
+     "M08",
+     "M05",
+     "M06",
+     "M09"
+    ],
+    "2040": [
+     "M03",
+     "M02",
+     "M04",
+     "M01",
+     "M07",
+     "M08",
+     "M05",
+     "M06",
+     "M09"
+    ],
+    "2045": [
+     "M03",
+     "M02",
+     "M04",
+     "M01",
+     "M07",
+     "M08",
+     "M05",
+     "M06",
+     "M09"
+    ]
+   },
+   "scenario_stable": true,
+   "rho_orders": {
+    "0.00": [
+     "M03",
+     "M02",
+     "M04",
+     "M01",
+     "M07",
+     "M08",
+     "M05",
+     "M06",
+     "M09"
+    ],
+    "0.02": [
+     "M03",
+     "M02",
+     "M04",
+     "M01",
+     "M07",
+     "M08",
+     "M05",
+     "M06",
+     "M09"
+    ],
+    "0.05": [
+     "M02",
+     "M03",
+     "M04",
+     "M01",
+     "M07",
+     "M08",
+     "M05",
+     "M06",
+     "M09"
+    ],
+    "0.07": [
+     "M02",
+     "M03",
+     "M04",
+     "M01",
+     "M07",
+     "M08",
+     "M05",
+     "M06",
+     "M09"
+    ],
+    "0.10": [
+     "M02",
+     "M03",
+     "M04",
+     "M01",
+     "M07",
+     "M08",
+     "M05",
+     "M06",
+     "M09"
+    ]
+   },
+   "rho_stable": false,
+   "mc": {
+    "n": 4000,
+    "k": 2,
+    "p_set_changes": 0.707,
+    "p_any_dominant": 1.0,
+    "assets": [
+     {
+      "asset_id": "M01",
+      "name": "Resident biometric templates (fingerprint; iris; face) in the ID Repository",
+      "p_top_unified": 0.22325,
+      "p_top_classical": 0.218,
+      "rank_median": 4.0,
+      "rank_lo": 1.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.6505,
+      "p_moves_up_2": 0.06275
+     },
+     {
+      "asset_id": "M02",
+      "name": "Resident demographic data and UIN mapping",
+      "p_top_unified": 0.643,
+      "p_top_classical": 0.91775,
+      "rank_median": 2.0,
+      "rank_lo": 1.0,
+      "rank_hi": 5.0,
+      "p_quantum_dominant": 0.027,
+      "p_moves_up_2": 0.0005
+     },
+     {
+      "asset_id": "M03",
+      "name": "Registration packets sent from enrolment centres to the server",
+      "p_top_unified": 0.5485,
+      "p_top_classical": 0.0,
+      "rank_median": 2.0,
+      "rank_lo": 1.0,
+      "rank_hi": 5.0,
+      "p_quantum_dominant": 1.0,
+      "p_moves_up_2": 0.90625
+     },
+     {
+      "asset_id": "M04",
+      "name": "Authentication and e-KYC exchanges with partner organisations (banks; telcos)",
+      "p_top_unified": 0.3515,
+      "p_top_classical": 0.59475,
+      "rank_median": 3.0,
+      "rank_lo": 1.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.3165,
+      "p_moves_up_2": 0.01725
+     },
+     {
+      "asset_id": "M05",
+      "name": "Operator and partner session tokens and one-time codes",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 7.0,
+      "rank_lo": 7.0,
+      "rank_hi": 8.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "M06",
+      "name": "Authentication and registration audit logs (contain identifiers)",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 8.0,
+      "rank_lo": 7.0,
+      "rank_hi": 8.0,
+      "p_quantum_dominant": 0.25475,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "M07",
+      "name": "Disaster-recovery copies of the ID Repository",
+      "p_top_unified": 0.21925,
+      "p_top_classical": 0.2225,
+      "rank_median": 4.0,
+      "rank_lo": 1.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.64725,
+      "p_moves_up_2": 0.05425
+     },
+     {
+      "asset_id": "M08",
+      "name": "Internal service-to-service traffic inside the national data centre",
+      "p_top_unified": 0.0145,
+      "p_top_classical": 0.047,
+      "rank_median": 6.0,
+      "rank_lo": 3.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.32625,
+      "p_moves_up_2": 0.0065
+     },
+     {
+      "asset_id": "M09",
+      "name": "Published schemas; UI labels and configuration",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 9.0,
+      "rank_lo": 9.0,
+      "rank_hi": 9.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     }
+    ]
+   },
+   "key_asset": "M03",
+   "key_dom_wilson": [
+    0.9990405566951769,
+    0.9999999999999999
+   ],
+   "key_dom_k": 4000,
+   "flip_test": {
+    "n_pairs": 36,
+    "signal_mean": 5.08675,
+    "noise_pair_mean": 3.74475,
+    "noise_base_mean": 2.56625,
+    "ratio": 1.3583683824020296,
+    "ratio_lo": 1.334194602580525,
+    "ratio_hi": 1.3841925314575516,
+    "ratio_base": 1.9821724305893813,
+    "ratio_base_lo": 1.9428177004743552,
+    "ratio_base_hi": 2.0217585133607683
+   },
+   "tau_dist": {
+    "median": 0.7222222222222222,
+    "lo": 0.5555555555555556,
+    "hi": 0.8888888888888888,
+    "mean": 0.7153194444444444,
+    "p_identical": 0.00175
+   },
+   "schedule": {
+    "asset": {
+     "n_items": 9,
+     "smith": 7217769.536477868,
+     "optimal": 7217769.536477868,
+     "smith_gap_pct": 0.0
+    },
+    "leg": {
+     "n_items": 16,
+     "smith": 10809673.403058117,
+     "siloed_classical_first": 23313737.828284405,
+     "siloed_quantum_first": 13997364.794874968,
+     "optimal": 10286289.76170614,
+     "smith_gap_pct": 5.088167390543807
+    }
+   },
+   "interleaved_items": [
+    {
+     "item": "M03-Q",
+     "leg": "quantum",
+     "asset": "M03",
+     "rate": 800662.0189070349
+    },
+    {
+     "item": "M02-C",
+     "leg": "classical",
+     "asset": "M02",
+     "rate": 500000.0
+    },
+    {
+     "item": "M01-Q",
+     "leg": "quantum",
+     "asset": "M01",
+     "rate": 222406.11636306523
+    },
+    {
+     "item": "M07-Q",
+     "leg": "quantum",
+     "asset": "M07",
+     "rate": 222406.11636306523
+    },
+    {
+     "item": "M04-C",
+     "leg": "classical",
+     "asset": "M04",
+     "rate": 200000.0
+    },
+    {
+     "item": "M04-Q",
+     "leg": "quantum",
+     "asset": "M04",
+     "rate": 195132.927259869
+    },
+    {
+     "item": "M02-Q",
+     "leg": "quantum",
+     "asset": "M02",
+     "rate": 148420.39656122215
+    },
+    {
+     "item": "M01-C",
+     "leg": "classical",
+     "asset": "M01",
+     "rate": 100000.0
+    },
+    {
+     "item": "M07-C",
+     "leg": "classical",
+     "asset": "M07",
+     "rate": 100000.0
+    },
+    {
+     "item": "M08-Q",
+     "leg": "quantum",
+     "asset": "M08",
+     "rate": 58712.96005843276
+    },
+    {
+     "item": "M08-C",
+     "leg": "classical",
+     "asset": "M08",
+     "rate": 50000.0
+    },
+    {
+     "item": "M03-C",
+     "leg": "classical",
+     "asset": "M03",
+     "rate": 10000.0
+    },
+    {
+     "item": "M05-C",
+     "leg": "classical",
+     "asset": "M05",
+     "rate": 5000.0
+    },
+    {
+     "item": "M06-C",
+     "leg": "classical",
+     "asset": "M06",
+     "rate": 1000.0
+    },
+    {
+     "item": "M06-Q",
+     "leg": "quantum",
+     "asset": "M06",
+     "rate": 929.0352785343712
+    },
+    {
+     "item": "M05-Q",
+     "leg": "quantum",
+     "asset": "M05",
+     "rate": 0.0004592753316956027
+    }
+   ],
+   "sobol": {
+    "asset": "M03",
+    "names": [
+     "loss V",
+     "hazard lambda",
+     "lifetime L",
+     "recordable share h",
+     "turnover tau",
+     "discount rho",
+     "CRQC median year"
+    ],
+    "S": [
+     0.47679877796670556,
+     0.0024320669539632522,
+     0.0006683181154772955,
+     0.00498889501067612,
+     0.4337189114313077,
+     0.04814293641830414,
+     0.03269437169230294
+    ],
+    "ST": [
+     0.4762404816614724,
+     0.002291407255180883,
+     0.00017114955889555933,
+     0.0044615228632697065,
+     0.4336544705015691,
+     0.05096737890368263,
+     0.03539747773769901
+    ],
+    "S_lo": [
+     0.4552725112731351,
+     -0.027672031435458468,
+     -0.029883456162446274,
+     -0.025683912510840515,
+     0.410749097761809,
+     0.015050914369875646,
+     0.00281757160847759
+    ],
+    "S_hi": [
+     0.49670657567114296,
+     0.030814237608017457,
+     0.029180688069009673,
+     0.03443707010141344,
+     0.4568078977462275,
+     0.07434866155071403,
+     0.059762748318075716
+    ],
+    "ST_lo": [
+     0.4554673507476678,
+     0.0021719807447612705,
+     0.00015200959161027093,
+     0.004270307247369892,
+     0.4161081054664517,
+     0.04853033565821887,
+     0.0336103865968199
+    ],
+    "ST_hi": [
+     0.4947822651484902,
+     0.002421666651009108,
+     0.00019165627980390448,
+     0.0046592095143766325,
+     0.4509053807322781,
+     0.05352993655394499,
+     0.0370683741119891
+    ],
+    "var": 0.17498162491900404
+   },
+   "tornado": [
+    {
+     "name": "loss V",
+     "low": 5.207456401782806,
+     "high": 6.207456401782806,
+     "swing": 1.0,
+     "base": 5.707456401782806
+    },
+    {
+     "name": "turnover tau",
+     "low": 5.230335147063143,
+     "high": 6.184577656502468,
+     "swing": 0.9542425094393252,
+     "base": 5.707456401782806
+    },
+    {
+     "name": "discount rho",
+     "low": 5.891002689900989,
+     "high": 5.558024034418097,
+     "swing": 0.33297865548289174,
+     "base": 5.707456401782806
+    },
+    {
+     "name": "CRQC median year",
+     "low": 5.84670817088504,
+     "high": 5.584688587189471,
+     "swing": 0.26201958369556877,
+     "base": 5.707456401782806
+    },
+    {
+     "name": "recordable share h",
+     "low": 5.656303879335424,
+     "high": 5.7532138923434815,
+     "swing": 0.09691001300805713,
+     "base": 5.707456401782806
+    },
+    {
+     "name": "hazard lambda",
+     "low": 5.731323724828283,
+     "high": 5.6617585514781235,
+     "swing": 0.06956517335015988,
+     "base": 5.707456401782806
+    },
+    {
+     "name": "lifetime L",
+     "low": 5.700279575733576,
+     "high": 5.707850681572137,
+     "swing": 0.007571105838561465,
+     "base": 5.707456401782806
+    }
+   ],
+   "convergence": [
+    {
+     "n": 250,
+     "p": 1.0,
+     "lo": 0.9848667002694292,
+     "hi": 0.9999999999999999,
+     "half_width": 0.007566649865285324
+    },
+    {
+     "n": 500,
+     "p": 1.0,
+     "lo": 0.9923756594190853,
+     "hi": 1.0,
+     "half_width": 0.0038121702904573285
+    },
+    {
+     "n": 1000,
+     "p": 1.0,
+     "lo": 0.9961732414543059,
+     "hi": 1.0,
+     "half_width": 0.001913379272847071
+    },
+    {
+     "n": 2000,
+     "p": 1.0,
+     "lo": 0.9980829526885622,
+     "hi": 1.0,
+     "half_width": 0.0009585236557189125
+    },
+    {
+     "n": 4000,
+     "p": 1.0,
+     "lo": 0.9990405566951769,
+     "hi": 0.9999999999999999,
+     "half_width": 0.0004797216524115022
+    },
+    {
+     "n": 8000,
+     "p": 1.0,
+     "lo": 0.9995200481042722,
+     "hi": 1.0,
+     "half_width": 0.00023997594786390186
+    },
+    {
+     "n": 16000,
+     "p": 1.0,
+     "lo": 0.9997599664498573,
+     "hi": 1.0,
+     "half_width": 0.00012001677507134101
+    }
+   ],
+   "scores": [
+    {
+     "id": "M03",
+     "name": "Registration packets sent from enrolment centres to the server",
+     "L": 50.0,
+     "classical": 10000.0,
+     "quantum": 800662.0189070349,
+     "share": 0.9876644029610733,
+     "classical_rank": 6,
+     "rank": 1
+    },
+    {
+     "id": "M02",
+     "name": "Resident demographic data and UIN mapping",
+     "L": 50.0,
+     "classical": 500000.0,
+     "quantum": 148420.39656122215,
+     "share": 0.22889532369484722,
+     "classical_rank": 1,
+     "rank": 2
+    },
+    {
+     "id": "M04",
+     "name": "Authentication and e-KYC exchanges with partner organisations (banks; telcos)",
+     "L": 30.0,
+     "classical": 200000.0,
+     "quantum": 195132.927259869,
+     "share": 0.4938412210115179,
+     "classical_rank": 2,
+     "rank": 3
+    },
+    {
+     "id": "M01",
+     "name": "Resident biometric templates (fingerprint; iris; face) in the ID Repository",
+     "L": 50.0,
+     "classical": 100000.0,
+     "quantum": 222406.11636306523,
+     "share": 0.6898321870314991,
+     "classical_rank": 3,
+     "rank": 4
+    },
+    {
+     "id": "M07",
+     "name": "Disaster-recovery copies of the ID Repository",
+     "L": 50.0,
+     "classical": 100000.0,
+     "quantum": 222406.11636306523,
+     "share": 0.6898321870314991,
+     "classical_rank": 4,
+     "rank": 5
+    },
+    {
+     "id": "M08",
+     "name": "Internal service-to-service traffic inside the national data centre",
+     "L": 30.0,
+     "classical": 50000.0,
+     "quantum": 58712.96005843276,
+     "share": 0.5400732353058438,
+     "classical_rank": 5,
+     "rank": 6
+    },
+    {
+     "id": "M05",
+     "name": "Operator and partner session tokens and one-time codes",
+     "L": 0.0001,
+     "classical": 5000.0,
+     "quantum": 0.0004592753316956027,
+     "share": 9.18550579017681e-08,
+     "classical_rank": 7,
+     "rank": 7
+    },
+    {
+     "id": "M06",
+     "name": "Authentication and registration audit logs (contain identifiers)",
+     "L": 10.0,
+     "classical": 1000.0,
+     "quantum": 929.0352785343712,
+     "share": 0.4816061628692592,
+     "classical_rank": 8,
+     "rank": 8
+    },
+    {
+     "id": "M09",
+     "name": "Published schemas; UI labels and configuration",
+     "L": 0.0,
+     "classical": 0.0,
+     "quantum": 0.0,
+     "share": 0.0,
+     "classical_rank": 9,
+     "rank": 9
+    }
+   ]
+  },
+  "fineract": {
+   "title": "Apache Fineract",
+   "blurb": "Core banking",
+   "n_assets": 9,
+   "n_pairs": 36,
+   "median_lifetime": 10.0,
+   "unified": [
+    "B02",
+    "B01",
+    "B07",
+    "B05",
+    "B06",
+    "B03",
+    "B04",
+    "B08",
+    "B09"
+   ],
+   "classical_only": [
+    "B02",
+    "B01",
+    "B07",
+    "B05",
+    "B06",
+    "B03",
+    "B04",
+    "B08",
+    "B09"
+   ],
+   "qars": [
+    "B01",
+    "B02",
+    "B05",
+    "B03",
+    "B06",
+    "B07",
+    "B08",
+    "B04",
+    "B09"
+   ],
+   "pairs_differing": 0,
+   "tau_classical": 1.0,
+   "tau_qars": 0.6666666666666666,
+   "quantum_dominant": [
+    "B06"
+   ],
+   "n_quantum_dominant": 1,
+   "n_nonzero_quantum": 7,
+   "scenarios": {
+    "2032": [
+     "B02",
+     "B01",
+     "B07",
+     "B05",
+     "B06",
+     "B03",
+     "B04",
+     "B08",
+     "B09"
+    ],
+    "2035": [
+     "B02",
+     "B01",
+     "B07",
+     "B05",
+     "B06",
+     "B03",
+     "B04",
+     "B08",
+     "B09"
+    ],
+    "2040": [
+     "B02",
+     "B01",
+     "B07",
+     "B05",
+     "B06",
+     "B03",
+     "B04",
+     "B08",
+     "B09"
+    ],
+    "2045": [
+     "B02",
+     "B01",
+     "B07",
+     "B05",
+     "B06",
+     "B03",
+     "B04",
+     "B08",
+     "B09"
+    ]
+   },
+   "scenario_stable": true,
+   "rho_orders": {
+    "0.00": [
+     "B02",
+     "B01",
+     "B07",
+     "B05",
+     "B06",
+     "B03",
+     "B04",
+     "B08",
+     "B09"
+    ],
+    "0.02": [
+     "B02",
+     "B01",
+     "B07",
+     "B05",
+     "B06",
+     "B03",
+     "B04",
+     "B08",
+     "B09"
+    ],
+    "0.05": [
+     "B02",
+     "B01",
+     "B07",
+     "B05",
+     "B06",
+     "B03",
+     "B04",
+     "B08",
+     "B09"
+    ],
+    "0.07": [
+     "B02",
+     "B01",
+     "B07",
+     "B05",
+     "B06",
+     "B03",
+     "B04",
+     "B08",
+     "B09"
+    ],
+    "0.10": [
+     "B02",
+     "B01",
+     "B07",
+     "B05",
+     "B06",
+     "B03",
+     "B04",
+     "B08",
+     "B09"
+    ]
+   },
+   "rho_stable": true,
+   "mc": {
+    "n": 4000,
+    "k": 2,
+    "p_set_changes": 0.2615,
+    "p_any_dominant": 0.8325,
+    "assets": [
+     {
+      "asset_id": "B01",
+      "name": "Customer KYC identity records (ID document copies; name; address; date of birth)",
+      "p_top_unified": 0.5705,
+      "p_top_classical": 0.46825,
+      "rank_median": 2.0,
+      "rank_lo": 1.0,
+      "rank_hi": 5.0,
+      "p_quantum_dominant": 0.25775,
+      "p_moves_up_2": 0.04125
+     },
+     {
+      "asset_id": "B02",
+      "name": "Account ledger and transaction history",
+      "p_top_unified": 0.92675,
+      "p_top_classical": 0.95425,
+      "rank_median": 1.0,
+      "rank_lo": 1.0,
+      "rank_hi": 3.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.00025
+     },
+     {
+      "asset_id": "B03",
+      "name": "Loan applications and credit-check results",
+      "p_top_unified": 0.00125,
+      "p_top_classical": 0.00075,
+      "rank_median": 6.0,
+      "rank_lo": 4.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.28125,
+      "p_moves_up_2": 0.012
+     },
+     {
+      "asset_id": "B04",
+      "name": "API sessions and OAuth2 access tokens",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 7.0,
+      "rank_lo": 7.0,
+      "rank_hi": 8.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "B05",
+      "name": "Payment and mobile-money messages exchanged with partner systems",
+      "p_top_unified": 0.12925,
+      "p_top_classical": 0.1015,
+      "rank_median": 4.0,
+      "rank_lo": 2.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.254,
+      "p_moves_up_2": 0.0445
+     },
+     {
+      "asset_id": "B06",
+      "name": "Off-site PostgreSQL backups",
+      "p_top_unified": 0.08,
+      "p_top_classical": 0.01525,
+      "rank_median": 4.0,
+      "rank_lo": 2.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.64025,
+      "p_moves_up_2": 0.1385
+     },
+     {
+      "asset_id": "B07",
+      "name": "Application-to-database link",
+      "p_top_unified": 0.29225,
+      "p_top_classical": 0.46,
+      "rank_median": 3.0,
+      "rank_lo": 1.0,
+      "rank_hi": 5.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "B08",
+      "name": "Audit trail of staff actions (contains customer identifiers)",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 8.0,
+      "rank_lo": 7.0,
+      "rank_hi": 8.0,
+      "p_quantum_dominant": 0.14975,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "B09",
+      "name": "Reference data (currencies; offices; product codes)",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 9.0,
+      "rank_lo": 9.0,
+      "rank_hi": 9.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     }
+    ]
+   },
+   "key_asset": "B06",
+   "key_dom_wilson": [
+    0.6252491465636193,
+    0.654981729589378
+   ],
+   "key_dom_k": 2561,
+   "flip_test": {
+    "n_pairs": 36,
+    "signal_mean": 1.441,
+    "noise_pair_mean": 3.14375,
+    "noise_base_mean": 2.0815,
+    "ratio": 0.4583697813121273,
+    "ratio_lo": 0.4444956194032304,
+    "ratio_hi": 0.47221041219554427,
+    "ratio_base": 0.6922892145087677,
+    "ratio_base_lo": 0.6704216470937506,
+    "ratio_base_hi": 0.7142042168073108
+   },
+   "tau_dist": {
+    "median": 0.9444444444444444,
+    "lo": 0.7777777777777778,
+    "hi": 1.0,
+    "mean": 0.9210000000000002,
+    "p_identical": 0.24525
+   },
+   "schedule": {
+    "asset": {
+     "n_items": 9,
+     "smith": 10268849.136747526,
+     "optimal": 10238034.237593934,
+     "smith_gap_pct": 0.300984529241366
+    },
+    "leg": {
+     "n_items": 15,
+     "smith": 16927295.309574068,
+     "siloed_classical_first": 25931052.400722537,
+     "siloed_quantum_first": 32754880.280071996,
+     "optimal": 15970644.849223765,
+     "smith_gap_pct": 5.99005531324428
+    }
+   },
+   "interleaved_items": [
+    {
+     "item": "B02-C",
+     "leg": "classical",
+     "asset": "B02",
+     "rate": 2000000.0
+    },
+    {
+     "item": "B01-C",
+     "leg": "classical",
+     "asset": "B01",
+     "rate": 500000.0
+    },
+    {
+     "item": "B07-C",
+     "leg": "classical",
+     "asset": "B07",
+     "rate": 500000.0
+    },
+    {
+     "item": "B01-Q",
+     "leg": "quantum",
+     "asset": "B01",
+     "rate": 442260.02867620246
+    },
+    {
+     "item": "B06-Q",
+     "leg": "quantum",
+     "asset": "B06",
+     "rate": 232258.8196335928
+    },
+    {
+     "item": "B05-C",
+     "leg": "classical",
+     "asset": "B05",
+     "rate": 200000.0
+    },
+    {
+     "item": "B02-Q",
+     "leg": "quantum",
+     "asset": "B02",
+     "rate": 173386.26817794458
+    },
+    {
+     "item": "B05-Q",
+     "leg": "quantum",
+     "asset": "B05",
+     "rate": 173386.26817794458
+    },
+    {
+     "item": "B06-C",
+     "leg": "classical",
+     "asset": "B06",
+     "rate": 100000.0
+    },
+    {
+     "item": "B03-C",
+     "leg": "classical",
+     "asset": "B03",
+     "rate": 50000.0
+    },
+    {
+     "item": "B03-Q",
+     "leg": "quantum",
+     "asset": "B03",
+     "rate": 49410.42929299068
+    },
+    {
+     "item": "B04-C",
+     "leg": "classical",
+     "asset": "B04",
+     "rate": 5000.0
+    },
+    {
+     "item": "B08-C",
+     "leg": "classical",
+     "asset": "B08",
+     "rate": 1000.0
+    },
+    {
+     "item": "B08-Q",
+     "leg": "quantum",
+     "asset": "B08",
+     "rate": 639.1688388839416
+    },
+    {
+     "item": "B04-Q",
+     "leg": "quantum",
+     "asset": "B04",
+     "rate": 0.0004592753316956027
+    }
+   ],
+   "sobol": {
+    "asset": "B06",
+    "names": [
+     "loss V",
+     "hazard lambda",
+     "lifetime L",
+     "recordable share h",
+     "turnover tau",
+     "discount rho",
+     "CRQC median year"
+    ],
+    "S": [
+     0.4153609288101171,
+     0.0008498930431840579,
+     0.03605918509884409,
+     0.01328560492227504,
+     0.3782426233432432,
+     0.010413311940143055,
+     0.14627693632783778
+    ],
+    "ST": [
+     0.41517383900075405,
+     0.00046415227217646275,
+     0.03747967028835585,
+     0.012768623936407169,
+     0.3780484823336701,
+     0.010453791101713513,
+     0.14739018792728606
+    ],
+    "S_lo": [
+     0.39027216554468364,
+     -0.02847948175541432,
+     0.006154837484017881,
+     -0.01771889297550385,
+     0.35640810679487356,
+     -0.017838810307082432,
+     0.11525864740995428
+    ],
+    "S_hi": [
+     0.43971463521005066,
+     0.028535956359077005,
+     0.06248188050876179,
+     0.041157462320749495,
+     0.40308718603691474,
+     0.037629899607019505,
+     0.17547747155615778
+    ],
+    "ST_lo": [
+     0.3960502728781749,
+     0.00044299738302320895,
+     0.03555016504950546,
+     0.012158151764476172,
+     0.36186417601869947,
+     0.009969233482355087,
+     0.14122899538141856
+    ],
+    "ST_hi": [
+     0.4318657146826696,
+     0.0004909282748484243,
+     0.039557556446819575,
+     0.013306559063996882,
+     0.3938790999711718,
+     0.011017002272402654,
+     0.15387365759269928
+    ],
+    "var": 0.20071913378237263
+   },
+   "tornado": [
+    {
+     "name": "loss V",
+     "low": 4.69172494881443,
+     "high": 5.69172494881443,
+     "swing": 1.0,
+     "base": 5.19172494881443
+    },
+    {
+     "name": "turnover tau",
+     "low": 4.714603694094768,
+     "high": 5.668846203534093,
+     "swing": 0.9542425094393252,
+     "base": 5.19172494881443
+    },
+    {
+     "name": "CRQC median year",
+     "low": 5.541264269462851,
+     "high": 4.94568032155234,
+     "swing": 0.5955839479105114,
+     "base": 5.19172494881443
+    },
+    {
+     "name": "lifetime L",
+     "low": 5.016277849997637,
+     "high": 5.326835764696584,
+     "swing": 0.310557914698947,
+     "base": 5.19172494881443
+    },
+    {
+     "name": "recordable share h",
+     "low": 5.094814935806373,
+     "high": 5.270906194862055,
+     "swing": 0.17609125905568135,
+     "base": 5.19172494881443
+    },
+    {
+     "name": "discount rho",
+     "low": 5.2724057043050365,
+     "high": 5.114885890287963,
+     "swing": 0.15751981401707393,
+     "base": 5.19172494881443
+    },
+    {
+     "name": "hazard lambda",
+     "low": 5.203015637754351,
+     "high": 5.169378960675448,
+     "swing": 0.03363667707890361,
+     "base": 5.19172494881443
+    }
+   ],
+   "convergence": [
+    {
+     "n": 250,
+     "p": 0.684,
+     "lo": 0.6239553162970827,
+     "hi": 0.7384756294020675,
+     "half_width": 0.05726015655249239
+    },
+    {
+     "n": 500,
+     "p": 0.658,
+     "lo": 0.6153562147365015,
+     "hi": 0.6982344936399296,
+     "half_width": 0.04143913945171407
+    },
+    {
+     "n": 1000,
+     "p": 0.664,
+     "lo": 0.6341464127998301,
+     "hi": 0.6925984103971824,
+     "half_width": 0.029225998798676156
+    },
+    {
+     "n": 2000,
+     "p": 0.642,
+     "lo": 0.6207353856595361,
+     "hi": 0.6627201729040155,
+     "half_width": 0.020992393622239702
+    },
+    {
+     "n": 4000,
+     "p": 0.63775,
+     "lo": 0.6227291565325982,
+     "hi": 0.6525065168369232,
+     "half_width": 0.014888680152162492
+    },
+    {
+     "n": 8000,
+     "p": 0.635625,
+     "lo": 0.625016476890985,
+     "hi": 0.6461033361572989,
+     "half_width": 0.010543429633156909
+    },
+    {
+     "n": 16000,
+     "p": 0.6370625,
+     "lo": 0.6295797568659655,
+     "hi": 0.6444794439371017,
+     "half_width": 0.007449843535568101
+    }
+   ],
+   "scores": [
+    {
+     "id": "B02",
+     "name": "Account ledger and transaction history",
+     "L": 10.0,
+     "classical": 2000000.0,
+     "quantum": 173386.26817794458,
+     "share": 0.07977701465984817,
+     "classical_rank": 1,
+     "rank": 1
+    },
+    {
+     "id": "B01",
+     "name": "Customer KYC identity records (ID document copies; name; address; date of birth)",
+     "L": 15.0,
+     "classical": 500000.0,
+     "quantum": 442260.02867620246,
+     "share": 0.46936091441503813,
+     "classical_rank": 2,
+     "rank": 2
+    },
+    {
+     "id": "B07",
+     "name": "Application-to-database link",
+     "L": 10.0,
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "share": 0.0,
+     "classical_rank": 3,
+     "rank": 3
+    },
+    {
+     "id": "B05",
+     "name": "Payment and mobile-money messages exchanged with partner systems",
+     "L": 10.0,
+     "classical": 200000.0,
+     "quantum": 173386.26817794458,
+     "share": 0.46436166231832054,
+     "classical_rank": 4,
+     "rank": 4
+    },
+    {
+     "id": "B06",
+     "name": "Off-site PostgreSQL backups",
+     "L": 10.0,
+     "classical": 100000.0,
+     "quantum": 232258.8196335928,
+     "share": 0.6990298102236153,
+     "classical_rank": 5,
+     "rank": 5
+    },
+    {
+     "id": "B03",
+     "name": "Loan applications and credit-check results",
+     "L": 7.0,
+     "classical": 50000.0,
+     "quantum": 49410.42929299068,
+     "share": 0.4970346637108281,
+     "classical_rank": 6,
+     "rank": 6
+    },
+    {
+     "id": "B04",
+     "name": "API sessions and OAuth2 access tokens",
+     "L": 0.0001,
+     "classical": 5000.0,
+     "quantum": 0.0004592753316956027,
+     "share": 9.18550579017681e-08,
+     "classical_rank": 7,
+     "rank": 7
+    },
+    {
+     "id": "B08",
+     "name": "Audit trail of staff actions (contains customer identifiers)",
+     "L": 7.0,
+     "classical": 1000.0,
+     "quantum": 639.1688388839416,
+     "share": 0.3899347179629961,
+     "classical_rank": 8,
+     "rank": 8
+    },
+    {
+     "id": "B09",
+     "name": "Reference data (currencies; offices; product codes)",
+     "L": 0.0,
+     "classical": 0.0,
+     "quantum": 0.0,
+     "share": 0.0,
+     "classical_rank": 9,
+     "rank": 9
+    }
+   ]
+  },
+  "openmrs": {
+   "title": "OpenMRS",
+   "blurb": "Medical records",
+   "n_assets": 10,
+   "n_pairs": 45,
+   "median_lifetime": 20.0,
+   "unified": [
+    "O01",
+    "O02",
+    "O03",
+    "O08",
+    "O09",
+    "O06",
+    "O10",
+    "O04",
+    "O05",
+    "O07"
+   ],
+   "classical_only": [
+    "O01",
+    "O02",
+    "O03",
+    "O09",
+    "O04",
+    "O06",
+    "O10",
+    "O08",
+    "O05",
+    "O07"
+   ],
+   "qars": [
+    "O01",
+    "O02",
+    "O03",
+    "O04",
+    "O06",
+    "O10",
+    "O08",
+    "O09",
+    "O05",
+    "O07"
+   ],
+   "pairs_differing": 6,
+   "tau_classical": 0.7333333333333333,
+   "tau_qars": 0.6444444444444445,
+   "quantum_dominant": [
+    "O08"
+   ],
+   "n_quantum_dominant": 1,
+   "n_nonzero_quantum": 8,
+   "scenarios": {
+    "2032": [
+     "O02",
+     "O01",
+     "O03",
+     "O08",
+     "O09",
+     "O06",
+     "O10",
+     "O04",
+     "O05",
+     "O07"
+    ],
+    "2035": [
+     "O01",
+     "O02",
+     "O03",
+     "O08",
+     "O09",
+     "O06",
+     "O10",
+     "O04",
+     "O05",
+     "O07"
+    ],
+    "2040": [
+     "O01",
+     "O02",
+     "O03",
+     "O09",
+     "O08",
+     "O06",
+     "O10",
+     "O04",
+     "O05",
+     "O07"
+    ],
+    "2045": [
+     "O01",
+     "O03",
+     "O02",
+     "O09",
+     "O08",
+     "O06",
+     "O10",
+     "O04",
+     "O05",
+     "O07"
+    ]
+   },
+   "scenario_stable": false,
+   "rho_orders": {
+    "0.00": [
+     "O01",
+     "O02",
+     "O03",
+     "O08",
+     "O09",
+     "O06",
+     "O10",
+     "O04",
+     "O05",
+     "O07"
+    ],
+    "0.02": [
+     "O01",
+     "O02",
+     "O03",
+     "O09",
+     "O08",
+     "O06",
+     "O10",
+     "O04",
+     "O05",
+     "O07"
+    ],
+    "0.05": [
+     "O01",
+     "O02",
+     "O03",
+     "O09",
+     "O08",
+     "O06",
+     "O10",
+     "O04",
+     "O05",
+     "O07"
+    ],
+    "0.07": [
+     "O01",
+     "O02",
+     "O03",
+     "O09",
+     "O06",
+     "O08",
+     "O10",
+     "O04",
+     "O05",
+     "O07"
+    ],
+    "0.10": [
+     "O02",
+     "O01",
+     "O03",
+     "O09",
+     "O06",
+     "O08",
+     "O10",
+     "O04",
+     "O05",
+     "O07"
+    ]
+   },
+   "rho_stable": false,
+   "mc": {
+    "n": 4000,
+    "k": 2,
+    "p_set_changes": 0.449,
+    "p_any_dominant": 0.938,
+    "assets": [
+     {
+      "asset_id": "O01",
+      "name": "Pediatric clinical records (encounters and observations of minors)",
+      "p_top_unified": 0.4995,
+      "p_top_classical": 0.4395,
+      "rank_median": 3.0,
+      "rank_lo": 1.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.23775,
+      "p_moves_up_2": 0.12125
+     },
+     {
+      "asset_id": "O02",
+      "name": "Adult clinical records (encounters orders and observations)",
+      "p_top_unified": 0.44125,
+      "p_top_classical": 0.416,
+      "rank_median": 3.0,
+      "rank_lo": 1.0,
+      "rank_hi": 7.0,
+      "p_quantum_dominant": 0.18075,
+      "p_moves_up_2": 0.07625
+     },
+     {
+      "asset_id": "O03",
+      "name": "Highly sensitive categories (HIV status; mental health; genetic)",
+      "p_top_unified": 0.4285,
+      "p_top_classical": 0.43925,
+      "rank_median": 3.0,
+      "rank_lo": 1.0,
+      "rank_hi": 7.0,
+      "p_quantum_dominant": 0.11575,
+      "p_moves_up_2": 0.057
+     },
+     {
+      "asset_id": "O04",
+      "name": "Patient identifiers and demographics",
+      "p_top_unified": 0.03675,
+      "p_top_classical": 0.08925,
+      "rank_median": 7.0,
+      "rank_lo": 3.0,
+      "rank_hi": 8.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.00075
+     },
+     {
+      "asset_id": "O05",
+      "name": "User credentials and session tokens",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 9.0,
+      "rank_lo": 9.0,
+      "rank_hi": 9.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "O06",
+      "name": "Lab and referral results exchanged with external systems (HL7/FHIR)",
+      "p_top_unified": 0.10725,
+      "p_top_classical": 0.09125,
+      "rank_median": 5.0,
+      "rank_lo": 2.0,
+      "rank_hi": 8.0,
+      "p_quantum_dominant": 0.27375,
+      "p_moves_up_2": 0.124
+     },
+     {
+      "asset_id": "O07",
+      "name": "Concept dictionary and metadata (published terminology)",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 10.0,
+      "rank_lo": 10.0,
+      "rank_hi": 10.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "O08",
+      "name": "Off-site backups and replicas of the clinical database",
+      "p_top_unified": 0.18725,
+      "p_top_classical": 0.01175,
+      "rank_median": 5.0,
+      "rank_lo": 1.0,
+      "rank_hi": 8.0,
+      "p_quantum_dominant": 0.873,
+      "p_moves_up_2": 0.5605
+     },
+     {
+      "asset_id": "O09",
+      "name": "Application to database link inside the data centre",
+      "p_top_unified": 0.26025,
+      "p_top_classical": 0.42825,
+      "rank_median": 4.0,
+      "rank_lo": 1.0,
+      "rank_hi": 8.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "O10",
+      "name": "Facility-to-facility patient data transfer",
+      "p_top_unified": 0.03925,
+      "p_top_classical": 0.08475,
+      "rank_median": 7.0,
+      "rank_lo": 3.0,
+      "rank_hi": 8.0,
+      "p_quantum_dominant": 0.005,
+      "p_moves_up_2": 0.0035
+     }
+    ]
+   },
+   "key_asset": "O08",
+   "key_dom_wilson": [
+    0.8623221222563217,
+    0.8829621330382805
+   ],
+   "key_dom_k": 3492,
+   "flip_test": {
+    "n_pairs": 45,
+    "signal_mean": 4.23175,
+    "noise_pair_mean": 10.3725,
+    "noise_base_mean": 8.18325,
+    "ratio": 0.40797782598216437,
+    "ratio_lo": 0.39945071478058547,
+    "ratio_hi": 0.41606670308062405,
+    "ratio_base": 0.5171233922952373,
+    "ratio_base_lo": 0.5068291805899704,
+    "ratio_base_hi": 0.5269501930823901
+   },
+   "tau_dist": {
+    "median": 0.8222222222222222,
+    "lo": 0.6,
+    "hi": 0.9555555555555556,
+    "mean": 0.812377777777778,
+    "p_identical": 0.02375
+   },
+   "schedule": {
+    "asset": {
+     "n_items": 10,
+     "smith": 16594778.07789929,
+     "optimal": 16455242.930347532,
+     "smith_gap_pct": 0.8479677154715315
+    },
+    "leg": {
+     "n_items": 17,
+     "smith": 30754166.457143042,
+     "siloed_classical_first": 39998991.27638074,
+     "siloed_quantum_first": 36841493.12581317,
+     "optimal": 28964744.9298448,
+     "smith_gap_pct": 6.177929519601788
+    }
+   },
+   "interleaved_items": [
+    {
+     "item": "O01-C",
+     "leg": "classical",
+     "asset": "O01",
+     "rate": 500000.0
+    },
+    {
+     "item": "O02-C",
+     "leg": "classical",
+     "asset": "O02",
+     "rate": 500000.0
+    },
+    {
+     "item": "O03-C",
+     "leg": "classical",
+     "asset": "O03",
+     "rate": 500000.0
+    },
+    {
+     "item": "O09-C",
+     "leg": "classical",
+     "asset": "O09",
+     "rate": 500000.0
+    },
+    {
+     "item": "O08-Q",
+     "leg": "quantum",
+     "asset": "O08",
+     "rate": 431616.51903469296
+    },
+    {
+     "item": "O01-Q",
+     "leg": "quantum",
+     "asset": "O01",
+     "rate": 422733.31242071587
+    },
+    {
+     "item": "O02-Q",
+     "leg": "quantum",
+     "asset": "O02",
+     "rate": 340085.8661766067
+    },
+    {
+     "item": "O03-Q",
+     "leg": "quantum",
+     "asset": "O03",
+     "rate": 264208.3202629474
+    },
+    {
+     "item": "O04-C",
+     "leg": "classical",
+     "asset": "O04",
+     "rate": 200000.0
+    },
+    {
+     "item": "O06-C",
+     "leg": "classical",
+     "asset": "O06",
+     "rate": 200000.0
+    },
+    {
+     "item": "O10-C",
+     "leg": "classical",
+     "asset": "O10",
+     "rate": 200000.0
+    },
+    {
+     "item": "O06-Q",
+     "leg": "quantum",
+     "asset": "O06",
+     "rate": 173386.26817794458
+    },
+    {
+     "item": "O08-C",
+     "leg": "classical",
+     "asset": "O08",
+     "rate": 100000.0
+    },
+    {
+     "item": "O10-Q",
+     "leg": "quantum",
+     "asset": "O10",
+     "rate": 34677.25363558892
+    },
+    {
+     "item": "O04-Q",
+     "leg": "quantum",
+     "asset": "O04",
+     "rate": 19513.2927259869
+    },
+    {
+     "item": "O05-C",
+     "leg": "classical",
+     "asset": "O05",
+     "rate": 5000.0
+    },
+    {
+     "item": "O05-Q",
+     "leg": "quantum",
+     "asset": "O05",
+     "rate": 0.0004592753316956027
+    }
+   ],
+   "sobol": {
+    "asset": "O08",
+    "names": [
+     "loss V",
+     "hazard lambda",
+     "lifetime L",
+     "recordable share h",
+     "turnover tau",
+     "discount rho",
+     "CRQC median year"
+    ],
+    "S": [
+     0.4686943997906948,
+     0.002266973234946179,
+     0.0025093182108233414,
+     0.01512087556700803,
+     0.4262234994527919,
+     0.03936656561762031,
+     0.046840765745245094
+    ],
+    "ST": [
+     0.4680088560195778,
+     0.0018232107491379167,
+     0.0028673998169847295,
+     0.014393558842254659,
+     0.42615892697564,
+     0.040865962859298895,
+     0.04863589245938549
+    ],
+    "S_lo": [
+     0.446407652870467,
+     -0.026898653137715958,
+     -0.027273595306995906,
+     -0.016323157985276532,
+     0.4042095543002088,
+     0.007794856984122131,
+     0.0171562879815276
+    ],
+    "S_hi": [
+     0.4895492340710816,
+     0.029688979527052753,
+     0.030476808934412125,
+     0.0437400131003719,
+     0.4482186071829275,
+     0.06639652426956742,
+     0.07406211596866738
+    ],
+    "ST_lo": [
+     0.4476792498498965,
+     0.0017286346257128196,
+     0.002669056109743299,
+     0.01376842191002133,
+     0.40883130296257025,
+     0.03906166308771767,
+     0.04646317920266153
+    ],
+    "ST_hi": [
+     0.4858140839592513,
+     0.0019304387265616984,
+     0.003110288136727701,
+     0.015033218792686582,
+     0.44334370789806105,
+     0.042892887455134185,
+     0.05075385846754215
+    ],
+    "var": 0.1780593086252359
+   },
+   "tornado": [
+    {
+     "name": "loss V",
+     "low": 4.9395500581761125,
+     "high": 5.9395500581761125,
+     "swing": 1.0,
+     "base": 5.4395500581761125
+    },
+    {
+     "name": "turnover tau",
+     "low": 4.96242880345645,
+     "high": 5.916671312895775,
+     "swing": 0.9542425094393252,
+     "base": 5.4395500581761125
+    },
+    {
+     "name": "discount rho",
+     "low": 5.606234396178964,
+     "high": 5.297565193366412,
+     "swing": 0.3086692028125517,
+     "base": 5.4395500581761125
+    },
+    {
+     "name": "CRQC median year",
+     "low": 5.591420073958141,
+     "high": 5.287298300879988,
+     "swing": 0.3041217730781529,
+     "base": 5.4395500581761125
+    },
+    {
+     "name": "recordable share h",
+     "low": 5.342640045168056,
+     "high": 5.518731304223738,
+     "swing": 0.17609125905568135,
+     "base": 5.4395500581761125
+    },
+    {
+     "name": "hazard lambda",
+     "low": 5.461748757387242,
+     "high": 5.3966531516527,
+     "swing": 0.06509560573454198,
+     "base": 5.4395500581761125
+    },
+    {
+     "name": "lifetime L",
+     "low": 5.391974574338243,
+     "high": 5.451580358647173,
+     "swing": 0.059605784308930154,
+     "base": 5.4395500581761125
+    }
+   ],
+   "convergence": [
+    {
+     "n": 250,
+     "p": 0.9,
+     "lo": 0.8565482889997439,
+     "hi": 0.9313450712157995,
+     "half_width": 0.037398391108027784
+    },
+    {
+     "n": 500,
+     "p": 0.902,
+     "lo": 0.8727939488780962,
+     "hi": 0.9250760812948484,
+     "half_width": 0.026141066208376085
+    },
+    {
+     "n": 1000,
+     "p": 0.892,
+     "lo": 0.8712410197340538,
+     "hi": 0.9097588015661221,
+     "half_width": 0.019258890916034166
+    },
+    {
+     "n": 2000,
+     "p": 0.8935,
+     "lo": 0.8792182265729673,
+     "hi": 0.9062730571929309,
+     "half_width": 0.013527415309981805
+    },
+    {
+     "n": 4000,
+     "p": 0.883,
+     "lo": 0.8726697986948959,
+     "hi": 0.8925952677336098,
+     "half_width": 0.00996273451935692
+    },
+    {
+     "n": 8000,
+     "p": 0.87775,
+     "lo": 0.8703899741533512,
+     "hi": 0.8847474221894265,
+     "half_width": 0.007178724018037652
+    },
+    {
+     "n": 16000,
+     "p": 0.878,
+     "lo": 0.8728378112966791,
+     "hi": 0.882980723339413,
+     "half_width": 0.005071456021366938
+    }
+   ],
+   "scores": [
+    {
+     "id": "O01",
+     "name": "Pediatric clinical records (encounters and observations of minors)",
+     "L": 30.0,
+     "classical": 500000.0,
+     "quantum": 422733.31242071587,
+     "share": 0.4581316256066549,
+     "classical_rank": 1,
+     "rank": 1
+    },
+    {
+     "id": "O02",
+     "name": "Adult clinical records (encounters orders and observations)",
+     "L": 10.0,
+     "classical": 500000.0,
+     "quantum": 340085.8661766067,
+     "share": 0.4048227447563227,
+     "classical_rank": 2,
+     "rank": 2
+    },
+    {
+     "id": "O03",
+     "name": "Highly sensitive categories (HIV status; mental health; genetic)",
+     "L": 30.0,
+     "classical": 500000.0,
+     "quantum": 264208.3202629474,
+     "share": 0.34572813885622067,
+     "classical_rank": 3,
+     "rank": 3
+    },
+    {
+     "id": "O08",
+     "name": "Off-site backups and replicas of the clinical database",
+     "L": 30.0,
+     "classical": 100000.0,
+     "quantum": 431616.51903469296,
+     "share": 0.8118944832986386,
+     "classical_rank": 8,
+     "rank": 4
+    },
+    {
+     "id": "O09",
+     "name": "Application to database link inside the data centre",
+     "L": 10.0,
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "share": 0.0,
+     "classical_rank": 4,
+     "rank": 5
+    },
+    {
+     "id": "O06",
+     "name": "Lab and referral results exchanged with external systems (HL7/FHIR)",
+     "L": 10.0,
+     "classical": 200000.0,
+     "quantum": 173386.26817794458,
+     "share": 0.46436166231832054,
+     "classical_rank": 6,
+     "rank": 6
+    },
+    {
+     "id": "O10",
+     "name": "Facility-to-facility patient data transfer",
+     "L": 10.0,
+     "classical": 200000.0,
+     "quantum": 34677.25363558892,
+     "share": 0.14776572121231818,
+     "classical_rank": 7,
+     "rank": 7
+    },
+    {
+     "id": "O04",
+     "name": "Patient identifiers and demographics",
+     "L": 30.0,
+     "classical": 200000.0,
+     "quantum": 19513.2927259869,
+     "share": 0.08889344460039086,
+     "classical_rank": 5,
+     "rank": 8
+    },
+    {
+     "id": "O05",
+     "name": "User credentials and session tokens",
+     "L": 0.0001,
+     "classical": 5000.0,
+     "quantum": 0.0004592753316956027,
+     "share": 9.18550579017681e-08,
+     "classical_rank": 9,
+     "rank": 9
+    },
+    {
+     "id": "O07",
+     "name": "Concept dictionary and metadata (published terminology)",
+     "L": 0.0,
+     "classical": 0.0,
+     "quantum": 0.0,
+     "share": 0.0,
+     "classical_rank": 10,
+     "rank": 10
+    }
+   ]
+  },
+  "online_boutique": {
+   "title": "Online Boutique",
+   "blurb": "Demo web shop (mock data)",
+   "n_assets": 7,
+   "n_pairs": 21,
+   "median_lifetime": 4.0,
+   "unified": [
+    "A02",
+    "A01",
+    "A07",
+    "A06",
+    "A03",
+    "A05",
+    "A04"
+   ],
+   "classical_only": [
+    "A01",
+    "A02",
+    "A07",
+    "A03",
+    "A06",
+    "A05",
+    "A04"
+   ],
+   "qars": [
+    "A02",
+    "A01",
+    "A07",
+    "A03",
+    "A04",
+    "A06",
+    "A05"
+   ],
+   "pairs_differing": 2,
+   "tau_classical": 0.8095238095238095,
+   "tau_qars": 0.7142857142857143,
+   "quantum_dominant": [],
+   "n_quantum_dominant": 0,
+   "n_nonzero_quantum": 5,
+   "scenarios": {
+    "2032": [
+     "A02",
+     "A01",
+     "A07",
+     "A06",
+     "A03",
+     "A05",
+     "A04"
+    ],
+    "2035": [
+     "A02",
+     "A01",
+     "A07",
+     "A06",
+     "A03",
+     "A05",
+     "A04"
+    ],
+    "2040": [
+     "A02",
+     "A01",
+     "A07",
+     "A06",
+     "A03",
+     "A05",
+     "A04"
+    ],
+    "2045": [
+     "A02",
+     "A01",
+     "A07",
+     "A06",
+     "A03",
+     "A05",
+     "A04"
+    ]
+   },
+   "scenario_stable": true,
+   "rho_orders": {
+    "0.00": [
+     "A02",
+     "A01",
+     "A07",
+     "A06",
+     "A03",
+     "A05",
+     "A04"
+    ],
+    "0.02": [
+     "A02",
+     "A01",
+     "A07",
+     "A06",
+     "A03",
+     "A05",
+     "A04"
+    ],
+    "0.05": [
+     "A02",
+     "A01",
+     "A07",
+     "A06",
+     "A03",
+     "A05",
+     "A04"
+    ],
+    "0.07": [
+     "A02",
+     "A01",
+     "A07",
+     "A06",
+     "A03",
+     "A05",
+     "A04"
+    ],
+    "0.10": [
+     "A02",
+     "A01",
+     "A07",
+     "A06",
+     "A03",
+     "A05",
+     "A04"
+    ]
+   },
+   "rho_stable": true,
+   "mc": {
+    "n": 4000,
+    "k": 2,
+    "p_set_changes": 0.02125,
+    "p_any_dominant": 0.427,
+    "assets": [
+     {
+      "asset_id": "A01",
+      "name": "Cardholder PAN + expiry in transit to PSP",
+      "p_top_unified": 0.9865,
+      "p_top_classical": 0.9855,
+      "rank_median": 2.0,
+      "rank_lo": 1.0,
+      "rank_hi": 2.0,
+      "p_quantum_dominant": 0.094,
+      "p_moves_up_2": 0.0005
+     },
+     {
+      "asset_id": "A02",
+      "name": "Customer PII on orders (name; address; email)",
+      "p_top_unified": 0.9935,
+      "p_top_classical": 0.9855,
+      "rank_median": 1.0,
+      "rank_lo": 1.0,
+      "rank_hi": 2.0,
+      "p_quantum_dominant": 0.2565,
+      "p_moves_up_2": 0.0025
+     },
+     {
+      "asset_id": "A03",
+      "name": "Session IDs and cart contents",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 5.0,
+      "rank_lo": 4.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "A04",
+      "name": "Product catalogue",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 7.0,
+      "rank_lo": 7.0,
+      "rank_hi": 7.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "A05",
+      "name": "Cart store contents at rest (Redis)",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 6.0,
+      "rank_lo": 4.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "A06",
+      "name": "Service-to-service mTLS identities (mesh certs)",
+      "p_top_unified": 0.0,
+      "p_top_classical": 0.0,
+      "rank_median": 5.0,
+      "rank_lo": 4.0,
+      "rank_hi": 6.0,
+      "p_quantum_dominant": 0.0,
+      "p_moves_up_2": 0.0
+     },
+     {
+      "asset_id": "A07",
+      "name": "Order-confirmation emails (PII + order contents) to SMTP",
+      "p_top_unified": 0.02,
+      "p_top_classical": 0.029,
+      "rank_median": 3.0,
+      "rank_lo": 3.0,
+      "rank_hi": 4.0,
+      "p_quantum_dominant": 0.19275,
+      "p_moves_up_2": 0.0165
+     }
+    ]
+   },
+   "key_asset": "A02",
+   "key_dom_wilson": [
+    0.24320484570100503,
+    0.2702624031884437
+   ],
+   "key_dom_k": 1026,
+   "flip_test": {
+    "n_pairs": 21,
+    "signal_mean": 0.29275,
+    "noise_pair_mean": 2.1365,
+    "noise_base_mean": 1.67925,
+    "ratio": 0.13702316873391063,
+    "ratio_lo": 0.12947505484554706,
+    "ratio_hi": 0.14473846777768345,
+    "ratio_base": 0.17433377996129226,
+    "ratio_base_lo": 0.1647178540175384,
+    "ratio_base_hi": 0.18389357729551686
+   },
+   "tau_dist": {
+    "median": 1.0,
+    "lo": 0.9047619047619048,
+    "hi": 1.0,
+    "mean": 0.9715476190476191,
+    "p_identical": 0.73975
+   },
+   "schedule": {
+    "asset": {
+     "n_items": 7,
+     "smith": 1265661.1594675644,
+     "optimal": 1265661.1594675644,
+     "smith_gap_pct": 0.0
+    },
+    "leg": {
+     "n_items": 11,
+     "smith": 2489297.910434235,
+     "siloed_classical_first": 5673786.433913447,
+     "siloed_quantum_first": 3425661.1594675644,
+     "optimal": 2265896.702943588,
+     "smith_gap_pct": 9.859284723810656
+    }
+   },
+   "interleaved_items": [
+    {
+     "item": "A01-C",
+     "leg": "classical",
+     "asset": "A01",
+     "rate": 200000.0
+    },
+    {
+     "item": "A02-C",
+     "leg": "classical",
+     "asset": "A02",
+     "rate": 200000.0
+    },
+    {
+     "item": "A02-Q",
+     "leg": "quantum",
+     "asset": "A02",
+     "rate": 173386.26817794458
+    },
+    {
+     "item": "A01-Q",
+     "leg": "quantum",
+     "asset": "A01",
+     "rate": 96289.148761173
+    },
+    {
+     "item": "A07-C",
+     "leg": "classical",
+     "asset": "A07",
+     "rate": 20000.0
+    },
+    {
+     "item": "A07-Q",
+     "leg": "quantum",
+     "asset": "A07",
+     "rate": 14691.080014871011
+    },
+    {
+     "item": "A03-C",
+     "leg": "classical",
+     "asset": "A03",
+     "rate": 5000.0
+    },
+    {
+     "item": "A06-C",
+     "leg": "classical",
+     "asset": "A06",
+     "rate": 5000.0
+    },
+    {
+     "item": "A05-C",
+     "leg": "classical",
+     "asset": "A05",
+     "rate": 2000.0
+    },
+    {
+     "item": "A06-Q",
+     "leg": "quantum",
+     "asset": "A06",
+     "rate": 33.74298165393687
+    },
+    {
+     "item": "A03-Q",
+     "leg": "quantum",
+     "asset": "A03",
+     "rate": 0.0004592753316956027
+    }
+   ],
+   "sobol": {
+    "asset": "A02",
+    "names": [
+     "loss V",
+     "hazard lambda",
+     "lifetime L",
+     "recordable share h",
+     "turnover tau",
+     "discount rho",
+     "CRQC median year"
+    ],
+    "S": [
+     0.3835395550425459,
+     0.08035575374085235,
+     0.0049166281521763056,
+     0.0040872080529476,
+     0.3487158911232313,
+     0.005044798627475533,
+     0.1742261146365126
+    ],
+    "ST": [
+     0.3831906357440658,
+     0.0813150636773855,
+     0.005650816204506135,
+     0.0035898119714616256,
+     0.3489252565532076,
+     0.004994887589436256,
+     0.1742424514405534
+    ],
+    "S_lo": [
+     0.3584274436109791,
+     0.05173244026187399,
+     -0.027959025512157842,
+     -0.029085828377161286,
+     0.32485075242198086,
+     -0.02753213887542823,
+     0.14491803442977216
+    ],
+    "S_hi": [
+     0.40557304284655493,
+     0.10703776799291002,
+     0.03283046976349963,
+     0.033333638907381655,
+     0.3749773787498423,
+     0.03394107424280287,
+     0.20206248959526152
+    ],
+    "ST_lo": [
+     0.36574217196956993,
+     0.07780936697469545,
+     0.00527351581144933,
+     0.0034220043832434376,
+     0.33448710211488936,
+     0.004762796690951947,
+     0.16638816881894944
+    ],
+    "ST_hi": [
+     0.39960938590079387,
+     0.08575333007036916,
+     0.006060294394792251,
+     0.0037530199691035255,
+     0.3641019058768282,
+     0.005252924276441259,
+     0.18271177722189338
+    ],
+    "var": 0.2174722593925604
+   },
+   "tornado": [
+    {
+     "name": "loss V",
+     "low": 4.574851221215598,
+     "high": 5.574851221215598,
+     "swing": 1.0,
+     "base": 5.074851221215598
+    },
+    {
+     "name": "turnover tau",
+     "low": 4.597729966495935,
+     "high": 5.55197247593526,
+     "swing": 0.9542425094393252,
+     "base": 5.074851221215598
+    },
+    {
+     "name": "CRQC median year",
+     "low": 5.495657394911033,
+     "high": 4.814219766032985,
+     "swing": 0.6814376288780482,
+     "base": 5.074851221215598
+    },
+    {
+     "name": "hazard lambda",
+     "low": 5.257120354219494,
+     "high": 4.788362948667853,
+     "swing": 0.46875740555164125,
+     "base": 5.074851221215598
+    },
+    {
+     "name": "discount rho",
+     "low": 5.135350532695779,
+     "high": 5.017713600020258,
+     "swing": 0.11763693267552089,
+     "base": 5.074851221215598
+    },
+    {
+     "name": "lifetime L",
+     "low": 4.996481343578983,
+     "high": 5.110635691572443,
+     "swing": 0.11415434799345991,
+     "base": 5.074851221215598
+    },
+    {
+     "name": "recordable share h",
+     "low": 5.023698698768216,
+     "high": 5.120608711776272,
+     "swing": 0.09691001300805624,
+     "base": 5.074851221215598
+    }
+   ],
+   "convergence": [
+    {
+     "n": 250,
+     "p": 0.268,
+     "lo": 0.21691132108769573,
+     "hi": 0.3261105299872892,
+     "half_width": 0.054599604449796724
+    },
+    {
+     "n": 500,
+     "p": 0.256,
+     "lo": 0.2197077079214847,
+     "hi": 0.29601297028200185,
+     "half_width": 0.03815263118025858
+    },
+    {
+     "n": 1000,
+     "p": 0.26,
+     "lo": 0.23376861830848544,
+     "hi": 0.28806822579344765,
+     "half_width": 0.027149803742481105
+    },
+    {
+     "n": 2000,
+     "p": 0.2575,
+     "lo": 0.23881433354987433,
+     "hi": 0.27711543439617303,
+     "half_width": 0.01915055042314935
+    },
+    {
+     "n": 4000,
+     "p": 0.256,
+     "lo": 0.24271396310311483,
+     "hi": 0.2697542452296388,
+     "half_width": 0.013520141063261992
+    },
+    {
+     "n": 8000,
+     "p": 0.252375,
+     "lo": 0.24297689789578247,
+     "hi": 0.26201079828057683,
+     "half_width": 0.009516950192397178
+    },
+    {
+     "n": 16000,
+     "p": 0.2545625,
+     "lo": 0.24787216577112928,
+     "hi": 0.26137066069779696,
+     "half_width": 0.006749247463333843
+    }
+   ],
+   "scores": [
+    {
+     "id": "A02",
+     "name": "Customer PII on orders (name; address; email)",
+     "L": 10.0,
+     "classical": 200000.0,
+     "quantum": 173386.26817794458,
+     "share": 0.46436166231832054,
+     "classical_rank": 2,
+     "rank": 1
+    },
+    {
+     "id": "A01",
+     "name": "Cardholder PAN + expiry in transit to PSP",
+     "L": 4.0,
+     "classical": 200000.0,
+     "quantum": 96289.148761173,
+     "share": 0.3249837166287446,
+     "classical_rank": 1,
+     "rank": 2
+    },
+    {
+     "id": "A07",
+     "name": "Order-confirmation emails (PII + order contents) to SMTP",
+     "L": 7.0,
+     "classical": 20000.0,
+     "quantum": 14691.080014871011,
+     "share": 0.42348292438786544,
+     "classical_rank": 3,
+     "rank": 3
+    },
+    {
+     "id": "A06",
+     "name": "Service-to-service mTLS identities (mesh certs)",
+     "L": 0.25,
+     "classical": 5000.0,
+     "quantum": 33.74298165393687,
+     "share": 0.006703358073091356,
+     "classical_rank": 5,
+     "rank": 4
+    },
+    {
+     "id": "A03",
+     "name": "Session IDs and cart contents",
+     "L": 0.0001,
+     "classical": 5000.0,
+     "quantum": 0.0004592753316956027,
+     "share": 9.18550579017681e-08,
+     "classical_rank": 4,
+     "rank": 5
+    },
+    {
+     "id": "A05",
+     "name": "Cart store contents at rest (Redis)",
+     "L": 0.02,
+     "classical": 2000.0,
+     "quantum": 0.0,
+     "share": 0.0,
+     "classical_rank": 6,
+     "rank": 6
+    },
+    {
+     "id": "A04",
+     "name": "Product catalogue",
+     "L": 0.0,
+     "classical": 0.0,
+     "quantum": 0.0,
+     "share": 0.0,
+     "classical_rank": 7,
+     "rank": 7
+    }
+   ]
+  }
+ },
+ "pooled": {
+  "n_assets": 35,
+  "spearman": 0.7107460215586514,
+  "ci_lo": 0.4701900906700537,
+  "ci_hi": 0.8850904005041191,
+  "n_clusters": 4,
+  "permutation_p_within_system": 9.99950002499875e-05,
+  "lifetimes": [
+   50.0,
+   50.0,
+   30.0,
+   50.0,
+   50.0,
+   30.0,
+   0.0001,
+   10.0,
+   0.0,
+   10.0,
+   15.0,
+   10.0,
+   10.0,
+   10.0,
+   7.0,
+   0.0001,
+   7.0,
+   0.0,
+   30.0,
+   10.0,
+   30.0,
+   30.0,
+   10.0,
+   10.0,
+   10.0,
+   30.0,
+   0.0001,
+   0.0,
+   10.0,
+   4.0,
+   7.0,
+   0.25,
+   0.0001,
+   0.02,
+   0.0
+  ],
+  "shares": [
+   0.9876644029610733,
+   0.22889532369484722,
+   0.4938412210115179,
+   0.6898321870314991,
+   0.6898321870314991,
+   0.5400732353058438,
+   9.18550579017681e-08,
+   0.4816061628692592,
+   0.0,
+   0.07977701465984817,
+   0.46936091441503813,
+   0.0,
+   0.46436166231832054,
+   0.6990298102236153,
+   0.4970346637108281,
+   9.18550579017681e-08,
+   0.3899347179629961,
+   0.0,
+   0.4581316256066549,
+   0.4048227447563227,
+   0.34572813885622067,
+   0.8118944832986386,
+   0.0,
+   0.46436166231832054,
+   0.14776572121231818,
+   0.08889344460039086,
+   9.18550579017681e-08,
+   0.0,
+   0.46436166231832054,
+   0.3249837166287446,
+   0.42348292438786544,
+   0.006703358073091356,
+   9.18550579017681e-08,
+   0.0,
+   0.0
+  ],
+  "systems": [
+   "mosip",
+   "mosip",
+   "mosip",
+   "mosip",
+   "mosip",
+   "mosip",
+   "mosip",
+   "mosip",
+   "mosip",
+   "fineract",
+   "fineract",
+   "fineract",
+   "fineract",
+   "fineract",
+   "fineract",
+   "fineract",
+   "fineract",
+   "fineract",
+   "openmrs",
+   "openmrs",
+   "openmrs",
+   "openmrs",
+   "openmrs",
+   "openmrs",
+   "openmrs",
+   "openmrs",
+   "openmrs",
+   "openmrs",
+   "online_boutique",
+   "online_boutique",
+   "online_boutique",
+   "online_boutique",
+   "online_boutique",
+   "online_boutique",
+   "online_boutique"
+  ]
+ },
+ "meta": {
+  "crqc": {
+   "optimistic": {
+    "alpha": 13.177803335523185,
+    "beta": 1.4332302863361295,
+    "median": 10.204295662309159
+   },
+   "pessimistic": {
+    "alpha": 17.8977597023406,
+    "beta": 1.9124279564299687,
+    "median": 14.776344930349135
+   }
+  }
+ }
+}

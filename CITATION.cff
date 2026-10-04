@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying analysis, please cite it as below."
+type: software
+title: "Cost of Delay for Post-Quantum Migration: reference implementation, case studies and analysis"
+abstract: >-
+  Expresses classical and harvest-now-decrypt-later risk on the same asset as a cost of
+  delay in US dollars per year, coupled through a competing-risks term, so that classical
+  findings and post-quantum migration items can be ranked on one list. Includes proofs,
+  a verified reference implementation, four public case studies, and an uncertainty and
+  sensitivity analysis. All case-study inputs are assumptions derived from public documents.
+authors:
+  - family-names: Shaw
+    given-names: Animesh
+    email: animesh15b@iimk.edu.in
+repository-code: "https://github.com/AnimeshShaw/pqc-cost-of-delay"
+url: "https://animeshshaw.github.io/pqc-cost-of-delay/"
+version: 0.1.0
+date-released: 2026-10-03
+license: Apache-2.0
+keywords:
+  - post-quantum cryptography
+  - harvest now decrypt later
+  - risk prioritisation
+  - cost of delay
+  - threat modelling
+  - migration planning

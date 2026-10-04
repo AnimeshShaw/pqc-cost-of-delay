@@ -1,0 +1,20 @@
+# Internal notes, planning and private drafts. Not part of the published repository.
+docs/
+paper/
+arxiv/
+
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.impeccable/
+*.egg-info/
+scripts/.ref_cache.json
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

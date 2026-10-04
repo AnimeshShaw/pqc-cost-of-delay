@@ -1,0 +1,10 @@
+rank,asset_id,name,lifetime_years,classical_usd_per_year,quantum_usd_per_year,total_usd_per_year,quantum_share,classical_only_rank,qars_score
+1,B02,Account ledger and transaction history,10.0,2000000.00,173386.27,2173386.27,0.0798,1,0.9667
+2,B01,Customer KYC identity records (ID document copies; name; address; date of birth),15.0,500000.00,442260.03,942260.03,0.4694,2,0.9667
+3,B07,Application-to-database link,10.0,500000.00,0.00,500000.00,0.0000,3,0.6667
+4,B05,Payment and mobile-money messages exchanged with partner systems,10.0,200000.00,173386.27,373386.27,0.4644,4,0.8833
+5,B06,Off-site PostgreSQL backups,10.0,100000.00,232258.82,332258.82,0.6990,5,0.8333
+6,B03,Loan applications and credit-check results,7.0,50000.00,49410.43,99410.43,0.4970,6,0.8440
+7,B04,API sessions and OAuth2 access tokens,0.0001,5000.00,0.00,5000.00,0.0000,7,0.4330
+8,B08,Audit trail of staff actions (contains customer identifiers),7.0,1000.00,639.17,1639.17,0.3899,8,0.4613
+9,B09,Reference data (currencies; offices; product codes),0.0,0.00,0.00,0.00,0.0000,9,0.3497

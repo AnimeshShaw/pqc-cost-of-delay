@@ -1,0 +1,11 @@
+rank,asset_id,name,lifetime_years,classical_usd_per_year,quantum_usd_per_year,total_usd_per_year,quantum_share,classical_only_rank,qars_score
+1,O01,Pediatric clinical records (encounters and observations of minors),30.0,500000.00,422733.31,922733.31,0.4581,1,0.9667
+2,O02,Adult clinical records (encounters orders and observations),10.0,500000.00,340085.87,840085.87,0.4048,2,0.9667
+3,O03,Highly sensitive categories (HIV status; mental health; genetic),30.0,500000.00,264208.32,764208.32,0.3457,3,0.9667
+4,O08,Off-site backups and replicas of the clinical database,30.0,100000.00,431616.52,531616.52,0.8119,8,0.8333
+5,O09,Application to database link inside the data centre,10.0,500000.00,0.00,500000.00,0.0000,4,0.6667
+6,O06,Lab and referral results exchanged with external systems (HL7/FHIR),10.0,200000.00,173386.27,373386.27,0.4644,6,0.8833
+7,O10,Facility-to-facility patient data transfer,10.0,200000.00,34677.25,234677.25,0.1478,7,0.8833
+8,O04,Patient identifiers and demographics,30.0,200000.00,19513.29,219513.29,0.0889,5,0.8833
+9,O05,User credentials and session tokens,0.0001,5000.00,0.00,5000.00,0.0000,9,0.4330
+10,O07,Concept dictionary and metadata (published terminology),0.0,0.00,0.00,0.00,0.0000,10,0.3497

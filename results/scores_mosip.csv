@@ -1,0 +1,10 @@
+rank,asset_id,name,lifetime_years,classical_usd_per_year,quantum_usd_per_year,total_usd_per_year,quantum_share,classical_only_rank,qars_score
+1,M03,Registration packets sent from enrolment centres to the server,50.0,10000.00,800662.02,810662.02,0.9877,6,0.8833
+2,M02,Resident demographic data and UIN mapping,50.0,500000.00,148420.40,648420.40,0.2289,1,0.8333
+3,M04,Authentication and e-KYC exchanges with partner organisations (banks; telcos),30.0,200000.00,195132.93,395132.93,0.4938,2,0.8833
+4,M01,Resident biometric templates (fingerprint; iris; face) in the ID Repository,50.0,100000.00,222406.12,322406.12,0.6898,3,0.8333
+5,M07,Disaster-recovery copies of the ID Repository,50.0,100000.00,222406.12,322406.12,0.6898,4,0.8333
+6,M08,Internal service-to-service traffic inside the national data centre,30.0,50000.00,58712.96,108712.96,0.5401,5,0.6167
+7,M05,Operator and partner session tokens and one-time codes,0.0001,5000.00,0.00,5000.00,0.0000,7,0.4330
+8,M06,Authentication and registration audit logs (contain identifiers),10.0,1000.00,929.04,1929.04,0.4816,8,0.5333
+9,M09,Published schemas; UI labels and configuration,0.0,0.00,0.00,0.00,0.0000,9,0.3497

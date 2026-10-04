@@ -1,0 +1,1282 @@
+{
+ "dists": {
+  "optimistic": {
+   "alpha": 13.177803335523185,
+   "beta": 1.4332302863361295,
+   "median": 10.204295662309159,
+   "cdf": {
+    "1": 0.024525963653052263,
+    "5": 0.22068507875465326,
+    "10": 0.49,
+    "15": 0.7,
+    "25": 0.9182156722184915,
+    "30": 0.9612775979598908,
+    "50": 0.9988421348951173
+   },
+   "pdf": {
+    "1": 0.03471672557564292,
+    "5": 0.05569946307013235,
+    "10": 0.0492179481507321,
+    "25": 0.011738783166805813
+   }
+  },
+  "pessimistic": {
+   "alpha": 17.8977597023406,
+   "beta": 1.9124279564299687,
+   "median": 14.776344930349135,
+   "cdf": {
+    "1": 0.00401088658940163,
+    "5": 0.08356624795263845,
+    "10": 0.28,
+    "15": 0.51,
+    "25": 0.8496574835887832,
+    "30": 0.9318026279920216,
+    "50": 0.9992016569276674
+   },
+   "pdf": {
+    "1": 0.007655128219802382,
+    "5": 0.03058853844096359,
+    "10": 0.045233306026435036,
+    "25": 0.02179210778850012
+   }
+  }
+ },
+ "grid": [
+  {
+   "median_year": 2032,
+   "alpha": 7.748385839620689,
+   "beta": 1.4332302863361295
+  },
+  {
+   "median_year": 2035,
+   "alpha": 11.622578759431034,
+   "beta": 1.4332302863361295
+  },
+  {
+   "median_year": 2040,
+   "alpha": 18.079566959114942,
+   "beta": 1.4332302863361295
+  },
+  {
+   "median_year": 2045,
+   "alpha": 24.536555158798848,
+   "beta": 1.4332302863361295
+  }
+ ],
+ "cases": [
+  {
+   "system": "mosip",
+   "scenario": "optimistic",
+   "rho": 0.0,
+   "order": [
+    "M03",
+    "M02",
+    "M04",
+    "M01",
+    "M07",
+    "M08",
+    "M05",
+    "M06",
+    "M09"
+   ],
+   "values": {
+    "M03": {
+     "classical": 10000.0,
+     "quantum": 800662.0189070349,
+     "quantum_uncoupled": 898957.9214056056
+    },
+    "M02": {
+     "classical": 500000.0,
+     "quantum": 148420.39656122215,
+     "quantum_uncoupled": 249710.5337237793
+    },
+    "M04": {
+     "classical": 200000.0,
+     "quantum": 195132.927259869,
+     "quantum_uncoupled": 865149.8381639017
+    },
+    "M01": {
+     "classical": 100000.0,
+     "quantum": 222406.11636306523,
+     "quantum_uncoupled": 249710.5337237793
+    },
+    "M07": {
+     "classical": 100000.0,
+     "quantum": 222406.11636306523,
+     "quantum_uncoupled": 249710.5337237793
+    },
+    "M08": {
+     "classical": 50000.0,
+     "quantum": 58712.96005843276,
+     "quantum_uncoupled": 96127.75979598907
+    },
+    "M05": {
+     "classical": 5000.0,
+     "quantum": 0.0004592753316956027,
+     "quantum_uncoupled": 0.0004592888580567944
+    },
+    "M06": {
+     "classical": 1000.0,
+     "quantum": 929.0352785343712,
+     "quantum_uncoupled": 980.0
+    },
+    "M09": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "mosip",
+   "scenario": "optimistic",
+   "rho": 0.05,
+   "order": [
+    "M02",
+    "M03",
+    "M04",
+    "M01",
+    "M07",
+    "M08",
+    "M05",
+    "M06",
+    "M09"
+   ],
+   "values": {
+    "M02": {
+     "classical": 500000.0,
+     "quantum": 98964.11420122176,
+     "quantum_uncoupled": 148420.39656122215
+    },
+    "M03": {
+     "classical": 10000.0,
+     "quantum": 488929.93850587256,
+     "quantum_uncoupled": 534313.4276203997
+    },
+    "M04": {
+     "classical": 200000.0,
+     "quantum": 154454.4254551155,
+     "quantum_uncoupled": 528416.6405258948
+    },
+    "M01": {
+     "classical": 100000.0,
+     "quantum": 135813.8718071868,
+     "quantum_uncoupled": 148420.39656122215
+    },
+    "M07": {
+     "classical": 100000.0,
+     "quantum": 135813.8718071868,
+     "quantum_uncoupled": 148420.39656122215
+    },
+    "M08": {
+     "classical": 50000.0,
+     "quantum": 39466.63973385341,
+     "quantum_uncoupled": 58712.96005843276
+    },
+    "M05": {
+     "classical": 5000.0,
+     "quantum": 0.0004592739790858463,
+     "quantum_uncoupled": 0.00045928750539910544
+    },
+    "M06": {
+     "classical": 1000.0,
+     "quantum": 719.021196909397,
+     "quantum_uncoupled": 755.7463692813482
+    },
+    "M09": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "mosip",
+   "scenario": "pessimistic",
+   "rho": 0.0,
+   "order": [
+    "M03",
+    "M02",
+    "M01",
+    "M07",
+    "M04",
+    "M08",
+    "M05",
+    "M06",
+    "M09"
+   ],
+   "values": {
+    "M03": {
+     "classical": 10000.0,
+     "quantum": 770255.7013066415,
+     "quantum_uncoupled": 899281.4912349007
+    },
+    "M02": {
+     "classical": 500000.0,
+     "quantum": 122978.45075624202,
+     "quantum_uncoupled": 249800.41423191683
+    },
+    "M01": {
+     "classical": 100000.0,
+     "quantum": 213959.91702962265,
+     "quantum_uncoupled": 249800.41423191683
+    },
+    "M07": {
+     "classical": 100000.0,
+     "quantum": 213959.91702962265,
+     "quantum_uncoupled": 249800.41423191683
+    },
+    "M04": {
+     "classical": 200000.0,
+     "quantum": 105609.4937052954,
+     "quantum_uncoupled": 838622.3651928195
+    },
+    "M08": {
+     "classical": 50000.0,
+     "quantum": 47990.81391309289,
+     "quantum_uncoupled": 93180.26279920216
+    },
+    "M05": {
+     "classical": 5000.0,
+     "quantum": 9.002991412611042e-07,
+     "quantum_uncoupled": 9.003287004816229e-07
+    },
+    "M06": {
+     "classical": 1000.0,
+     "quantum": 525.7454916066011,
+     "quantum_uncoupled": 560.0
+    },
+    "M09": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "mosip",
+   "scenario": "pessimistic",
+   "rho": 0.05,
+   "order": [
+    "M02",
+    "M03",
+    "M04",
+    "M01",
+    "M07",
+    "M08",
+    "M05",
+    "M06",
+    "M09"
+   ],
+   "values": {
+    "M02": {
+     "classical": 500000.0,
+     "quantum": 69500.40798314587,
+     "quantum_uncoupled": 122978.45075624202
+    },
+    "M03": {
+     "classical": 10000.0,
+     "quantum": 391147.40601216006,
+     "quantum_uncoupled": 442722.42272247124
+    },
+    "M04": {
+     "classical": 200000.0,
+     "quantum": 75532.03457822252,
+     "quantum_uncoupled": 431917.325217836
+    },
+    "M01": {
+     "classical": 100000.0,
+     "quantum": 108652.05722560002,
+     "quantum_uncoupled": 122978.45075624202
+    },
+    "M07": {
+     "classical": 100000.0,
+     "quantum": 108652.05722560002,
+     "quantum_uncoupled": 122978.45075624202
+    },
+    "M08": {
+     "classical": 50000.0,
+     "quantum": 27578.842278812244,
+     "quantum_uncoupled": 47990.81391309289
+    },
+    "M05": {
+     "classical": 5000.0,
+     "quantum": 9.002961853995627e-07,
+     "quantum_uncoupled": 9.003257445100617e-07
+    },
+    "M06": {
+     "classical": 1000.0,
+     "quantum": 386.94778306425525,
+     "quantum_uncoupled": 410.90765439077245
+    },
+    "M09": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "fineract",
+   "scenario": "optimistic",
+   "rho": 0.0,
+   "order": [
+    "B02",
+    "B01",
+    "B07",
+    "B05",
+    "B06",
+    "B03",
+    "B04",
+    "B08",
+    "B09"
+   ],
+   "values": {
+    "B02": {
+     "classical": 2000000.0,
+     "quantum": 173386.26817794458,
+     "quantum_uncoupled": 441000.0
+    },
+    "B01": {
+     "classical": 500000.0,
+     "quantum": 442260.02867620246,
+     "quantum_uncoupled": 630000.0
+    },
+    "B07": {
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "B05": {
+     "classical": 200000.0,
+     "quantum": 173386.26817794458,
+     "quantum_uncoupled": 441000.0
+    },
+    "B06": {
+     "classical": 100000.0,
+     "quantum": 232258.8196335928,
+     "quantum_uncoupled": 245000.0
+    },
+    "B03": {
+     "classical": 50000.0,
+     "quantum": 49410.42929299068,
+     "quantum_uncoupled": 59806.82217025643
+    },
+    "B04": {
+     "classical": 5000.0,
+     "quantum": 0.0004592753316956027,
+     "quantum_uncoupled": 0.0004592888580567944
+    },
+    "B08": {
+     "classical": 1000.0,
+     "quantum": 639.1688388839416,
+     "quantum_uncoupled": 664.5202463361826
+    },
+    "B09": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "fineract",
+   "scenario": "optimistic",
+   "rho": 0.05,
+   "order": [
+    "B02",
+    "B01",
+    "B07",
+    "B05",
+    "B06",
+    "B03",
+    "B04",
+    "B08",
+    "B09"
+   ],
+   "values": {
+    "B02": {
+     "classical": 2000000.0,
+     "quantum": 143194.46198946144,
+     "quantum_uncoupled": 340085.8661766067
+    },
+    "B01": {
+     "classical": 500000.0,
+     "quantum": 322520.29722029855,
+     "quantum_uncoupled": 442260.02867620246
+    },
+    "B07": {
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "B05": {
+     "classical": 200000.0,
+     "quantum": 143194.46198946144,
+     "quantum_uncoupled": 340085.8661766067
+    },
+    "B06": {
+     "classical": 100000.0,
+     "quantum": 179755.29922734923,
+     "quantum_uncoupled": 188936.59232033705
+    },
+    "B03": {
+     "classical": 50000.0,
+     "quantum": 41184.41215175772,
+     "quantum_uncoupled": 49410.42929299068
+    },
+    "B04": {
+     "classical": 5000.0,
+     "quantum": 0.0004592739790858463,
+     "quantum_uncoupled": 0.00045928750539910544
+    },
+    "B08": {
+     "classical": 1000.0,
+     "quantum": 528.9937660584226,
+     "quantum_uncoupled": 549.0047699221186
+    },
+    "B09": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "fineract",
+   "scenario": "pessimistic",
+   "rho": 0.0,
+   "order": [
+    "B02",
+    "B01",
+    "B07",
+    "B05",
+    "B06",
+    "B03",
+    "B04",
+    "B08",
+    "B09"
+   ],
+   "values": {
+    "B02": {
+     "classical": 2000000.0,
+     "quantum": 80265.8919043293,
+     "quantum_uncoupled": 252000.00000000003
+    },
+    "B01": {
+     "classical": 500000.0,
+     "quantum": 296032.4740900875,
+     "quantum_uncoupled": 459000.0
+    },
+    "B07": {
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "B05": {
+     "classical": 200000.0,
+     "quantum": 80265.8919043293,
+     "quantum_uncoupled": 252000.00000000003
+    },
+    "B06": {
+     "classical": 100000.0,
+     "quantum": 131436.3729016503,
+     "quantum_uncoupled": 140000.0
+    },
+    "B03": {
+     "classical": 50000.0,
+     "quantum": 22054.531560452317,
+     "quantum_uncoupled": 27542.97557903082
+    },
+    "B04": {
+     "classical": 5000.0,
+     "quantum": 9.002991412611042e-07,
+     "quantum_uncoupled": 9.003287004816229e-07
+    },
+    "B08": {
+     "classical": 1000.0,
+     "quantum": 292.5587137562941,
+     "quantum_uncoupled": 306.0330619892313
+    },
+    "B09": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "fineract",
+   "scenario": "pessimistic",
+   "rho": 0.05,
+   "order": [
+    "B02",
+    "B01",
+    "B07",
+    "B05",
+    "B06",
+    "B03",
+    "B04",
+    "B08",
+    "B09"
+   ],
+   "values": {
+    "B02": {
+     "classical": 2000000.0,
+     "quantum": 62754.370913592145,
+     "quantum_uncoupled": 184908.4444758476
+    },
+    "B01": {
+     "classical": 500000.0,
+     "quantum": 197752.22581797073,
+     "quantum_uncoupled": 296032.4740900875
+    },
+    "B07": {
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "B05": {
+     "classical": 200000.0,
+     "quantum": 62754.370913592145,
+     "quantum_uncoupled": 184908.4444758476
+    },
+    "B06": {
+     "classical": 100000.0,
+     "quantum": 96736.94576606381,
+     "quantum_uncoupled": 102726.9135976931
+    },
+    "B03": {
+     "classical": 50000.0,
+     "quantum": 17791.408330298556,
+     "quantum_uncoupled": 22054.531560452317
+    },
+    "B04": {
+     "classical": 5000.0,
+     "quantum": 9.002961853995627e-07,
+     "quantum_uncoupled": 9.003257445100617e-07
+    },
+    "B08": {
+     "classical": 1000.0,
+     "quantum": 234.60452608208692,
+     "quantum_uncoupled": 245.05035067169243
+    },
+    "B09": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "openmrs",
+   "scenario": "optimistic",
+   "rho": 0.0,
+   "order": [
+    "O01",
+    "O02",
+    "O03",
+    "O08",
+    "O09",
+    "O06",
+    "O10",
+    "O04",
+    "O05",
+    "O07"
+   ],
+   "values": {
+    "O01": {
+     "classical": 500000.0,
+     "quantum": 422733.31242071587,
+     "quantum_uncoupled": 692119.8705311214
+    },
+    "O02": {
+     "classical": 500000.0,
+     "quantum": 340085.8661766067,
+     "quantum_uncoupled": 441000.0
+    },
+    "O03": {
+     "classical": 500000.0,
+     "quantum": 264208.3202629474,
+     "quantum_uncoupled": 432574.91908195085
+    },
+    "O08": {
+     "classical": 100000.0,
+     "quantum": 431616.51903469296,
+     "quantum_uncoupled": 480638.79897994536
+    },
+    "O09": {
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "O06": {
+     "classical": 200000.0,
+     "quantum": 173386.26817794458,
+     "quantum_uncoupled": 441000.0
+    },
+    "O10": {
+     "classical": 200000.0,
+     "quantum": 34677.25363558892,
+     "quantum_uncoupled": 88200.0
+    },
+    "O04": {
+     "classical": 200000.0,
+     "quantum": 19513.2927259869,
+     "quantum_uncoupled": 86514.98381639017
+    },
+    "O05": {
+     "classical": 5000.0,
+     "quantum": 0.0004592753316956027,
+     "quantum_uncoupled": 0.0004592888580567944
+    },
+    "O07": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "openmrs",
+   "scenario": "optimistic",
+   "rho": 0.05,
+   "order": [
+    "O01",
+    "O02",
+    "O03",
+    "O09",
+    "O08",
+    "O06",
+    "O10",
+    "O04",
+    "O05",
+    "O07"
+   ],
+   "values": {
+    "O01": {
+     "classical": 500000.0,
+     "quantum": 284159.80608374457,
+     "quantum_uncoupled": 422733.31242071587
+    },
+    "O02": {
+     "classical": 500000.0,
+     "quantum": 267002.96601540287,
+     "quantum_uncoupled": 340085.8661766067
+    },
+    "O03": {
+     "classical": 500000.0,
+     "quantum": 177599.87880234033,
+     "quantum_uncoupled": 264208.3202629474
+    },
+    "O09": {
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "O08": {
+     "classical": 100000.0,
+     "quantum": 269305.4477878461,
+     "quantum_uncoupled": 293564.8002921638
+    },
+    "O06": {
+     "classical": 200000.0,
+     "quantum": 143194.46198946144,
+     "quantum_uncoupled": 340085.8661766067
+    },
+    "O10": {
+     "classical": 200000.0,
+     "quantum": 28638.892397892287,
+     "quantum_uncoupled": 68017.17323532134
+    },
+    "O04": {
+     "classical": 200000.0,
+     "quantum": 15445.44254551155,
+     "quantum_uncoupled": 52841.66405258948
+    },
+    "O05": {
+     "classical": 5000.0,
+     "quantum": 0.0004592739790858463,
+     "quantum_uncoupled": 0.00045928750539910544
+    },
+    "O07": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "openmrs",
+   "scenario": "pessimistic",
+   "rho": 0.0,
+   "order": [
+    "O01",
+    "O03",
+    "O02",
+    "O08",
+    "O09",
+    "O06",
+    "O10",
+    "O04",
+    "O05",
+    "O07"
+   ],
+   "values": {
+    "O01": {
+     "classical": 500000.0,
+     "quantum": 345533.8601742688,
+     "quantum_uncoupled": 670897.8921542555
+    },
+    "O03": {
+     "classical": 500000.0,
+     "quantum": 215958.662608918,
+     "quantum_uncoupled": 419311.18259640975
+    },
+    "O02": {
+     "classical": 500000.0,
+     "quantum": 184908.4444758476,
+     "quantum_uncoupled": 252000.00000000003
+    },
+    "O08": {
+     "classical": 100000.0,
+     "quantum": 404129.9596862156,
+     "quantum_uncoupled": 465901.3139960108
+    },
+    "O09": {
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "O06": {
+     "classical": 200000.0,
+     "quantum": 80265.8919043293,
+     "quantum_uncoupled": 252000.00000000003
+    },
+    "O10": {
+     "classical": 200000.0,
+     "quantum": 16053.178380865858,
+     "quantum_uncoupled": 50400.00000000001
+    },
+    "O04": {
+     "classical": 200000.0,
+     "quantum": 10560.94937052954,
+     "quantum_uncoupled": 83862.23651928194
+    },
+    "O05": {
+     "classical": 5000.0,
+     "quantum": 9.002991412611042e-07,
+     "quantum_uncoupled": 9.003287004816229e-07
+    },
+    "O07": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "openmrs",
+   "scenario": "pessimistic",
+   "rho": 0.05,
+   "order": [
+    "O01",
+    "O02",
+    "O03",
+    "O09",
+    "O08",
+    "O06",
+    "O10",
+    "O04",
+    "O05",
+    "O07"
+   ],
+   "values": {
+    "O01": {
+     "classical": 500000.0,
+     "quantum": 198567.66440744814,
+     "quantum_uncoupled": 345533.8601742688
+    },
+    "O02": {
+     "classical": 500000.0,
+     "quantum": 137790.12439687006,
+     "quantum_uncoupled": 184908.4444758476
+    },
+    "O03": {
+     "classical": 500000.0,
+     "quantum": 124104.79025465509,
+     "quantum_uncoupled": 215958.662608918
+    },
+    "O09": {
+     "classical": 500000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "O08": {
+     "classical": 100000.0,
+     "quantum": 213034.30833149317,
+     "quantum_uncoupled": 239954.06956546445
+    },
+    "O06": {
+     "classical": 200000.0,
+     "quantum": 62754.370913592145,
+     "quantum_uncoupled": 184908.4444758476
+    },
+    "O10": {
+     "classical": 200000.0,
+     "quantum": 12550.87418271843,
+     "quantum_uncoupled": 36981.68889516952
+    },
+    "O04": {
+     "classical": 200000.0,
+     "quantum": 7553.203457822252,
+     "quantum_uncoupled": 43191.7325217836
+    },
+    "O05": {
+     "classical": 5000.0,
+     "quantum": 9.002961853995627e-07,
+     "quantum_uncoupled": 9.003257445100617e-07
+    },
+    "O07": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "online_boutique",
+   "scenario": "optimistic",
+   "rho": 0.0,
+   "order": [
+    "A02",
+    "A01",
+    "A07",
+    "A06",
+    "A03",
+    "A05",
+    "A04"
+   ],
+   "values": {
+    "A02": {
+     "classical": 200000.0,
+     "quantum": 173386.26817794458,
+     "quantum_uncoupled": 441000.0
+    },
+    "A01": {
+     "classical": 200000.0,
+     "quantum": 96289.148761173,
+     "quantum_uncoupled": 149076.7685434495
+    },
+    "A07": {
+     "classical": 20000.0,
+     "quantum": 14691.080014871011,
+     "quantum_uncoupled": 29903.411085128217
+    },
+    "A06": {
+     "classical": 5000.0,
+     "quantum": 33.74298165393687,
+     "quantum_uncoupled": 33.99204366081765
+    },
+    "A03": {
+     "classical": 5000.0,
+     "quantum": 0.0004592753316956027,
+     "quantum_uncoupled": 0.0004592888580567944
+    },
+    "A05": {
+     "classical": 2000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "A04": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "online_boutique",
+   "scenario": "optimistic",
+   "rho": 0.05,
+   "order": [
+    "A02",
+    "A01",
+    "A07",
+    "A06",
+    "A03",
+    "A05",
+    "A04"
+   ],
+   "values": {
+    "A02": {
+     "classical": 200000.0,
+     "quantum": 143194.46198946144,
+     "quantum_uncoupled": 340085.8661766067
+    },
+    "A01": {
+     "classical": 200000.0,
+     "quantum": 86951.83341795561,
+     "quantum_uncoupled": 133066.4817225403
+    },
+    "A07": {
+     "classical": 20000.0,
+     "quantum": 12571.599171129461,
+     "quantum_uncoupled": 24705.21464649534
+    },
+    "A06": {
+     "classical": 5000.0,
+     "quantum": 33.496114005779745,
+     "quantum_uncoupled": 33.74298165393687
+    },
+    "A03": {
+     "classical": 5000.0,
+     "quantum": 0.0004592739790858463,
+     "quantum_uncoupled": 0.00045928750539910544
+    },
+    "A05": {
+     "classical": 2000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "A04": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "online_boutique",
+   "scenario": "pessimistic",
+   "rho": 0.0,
+   "order": [
+    "A02",
+    "A01",
+    "A07",
+    "A06",
+    "A03",
+    "A05",
+    "A04"
+   ],
+   "values": {
+    "A02": {
+     "classical": 200000.0,
+     "quantum": 80265.8919043293,
+     "quantum_uncoupled": 252000.00000000003
+    },
+    "A01": {
+     "classical": 200000.0,
+     "quantum": 30126.348714335603,
+     "quantum_uncoupled": 49824.549428067214
+    },
+    "A07": {
+     "classical": 20000.0,
+     "quantum": 5924.3982677779495,
+     "quantum_uncoupled": 13771.48778951541
+    },
+    "A06": {
+     "classical": 5000.0,
+     "quantum": 2.8124978775629144,
+     "quantum_uncoupled": 2.8356645399718605
+    },
+    "A03": {
+     "classical": 5000.0,
+     "quantum": 9.002991412611042e-07,
+     "quantum_uncoupled": 9.003287004816229e-07
+    },
+    "A05": {
+     "classical": 2000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "A04": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  },
+  {
+   "system": "online_boutique",
+   "scenario": "pessimistic",
+   "rho": 0.05,
+   "order": [
+    "A02",
+    "A01",
+    "A07",
+    "A06",
+    "A03",
+    "A05",
+    "A04"
+   ],
+   "values": {
+    "A02": {
+     "classical": 200000.0,
+     "quantum": 62754.370913592145,
+     "quantum_uncoupled": 184908.4444758476
+    },
+    "A01": {
+     "classical": 200000.0,
+     "quantum": 26730.07863075665,
+     "quantum_uncoupled": 43777.634809141215
+    },
+    "A07": {
+     "classical": 20000.0,
+     "quantum": 4892.32855940288,
+     "quantum_uncoupled": 11027.265780226158
+    },
+    "A06": {
+     "classical": 5000.0,
+     "quantum": 2.7895456392570526,
+     "quantum_uncoupled": 2.8124978775629144
+    },
+    "A03": {
+     "classical": 5000.0,
+     "quantum": 9.002961853995627e-07,
+     "quantum_uncoupled": 9.003257445100617e-07
+    },
+    "A05": {
+     "classical": 2000.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    },
+    "A04": {
+     "classical": 0.0,
+     "quantum": 0.0,
+     "quantum_uncoupled": 0.0
+    }
+   }
+  }
+ ],
+ "races": [
+  {
+   "scenario": "optimistic",
+   "lam": 0.01,
+   "L": 3.0,
+   "counted": 0.11104879771245789,
+   "naive": 0.11299393146548964,
+   "classical_first": 0.02816012484780466,
+   "union": 0.13920892256026252
+  },
+  {
+   "scenario": "optimistic",
+   "lam": 0.01,
+   "L": 12.0,
+   "counted": 0.5477571563269085,
+   "naive": 0.5828980021566732,
+   "classical_first": 0.08230655759028803,
+   "union": 0.6300637139171977
+  },
+  {
+   "scenario": "optimistic",
+   "lam": 0.01,
+   "L": 30.0,
+   "counted": 0.86323303804521,
+   "naive": 0.9612775979598908,
+   "classical_first": 0.10808070097491462,
+   "union": 0.9713137390201242
+  },
+  {
+   "scenario": "optimistic",
+   "lam": 0.2,
+   "L": 3.0,
+   "counted": 0.0808281897225588,
+   "naive": 0.11299393146548964,
+   "classical_first": 0.4323725585796862,
+   "union": 0.5132007483022453
+  },
+  {
+   "scenario": "optimistic",
+   "lam": 0.2,
+   "L": 12.0,
+   "counted": 0.20305557194343055,
+   "naive": 0.5828980021566732,
+   "classical_first": 0.7591057884992978,
+   "union": 0.9621613604427285
+  },
+  {
+   "scenario": "optimistic",
+   "lam": 0.2,
+   "L": 30.0,
+   "counted": 0.21681436313768643,
+   "naive": 0.9612775979598908,
+   "classical_first": 0.7830896536239709,
+   "union": 0.9999040167616573
+  },
+  {
+   "scenario": "optimistic",
+   "lam": 0.9,
+   "L": 3.0,
+   "counted": 0.030694723974669103,
+   "naive": 0.11299393146548964,
+   "classical_first": 0.9096935783861992,
+   "union": 0.9403883023608686
+  },
+  {
+   "scenario": "optimistic",
+   "lam": 0.9,
+   "L": 12.0,
+   "counted": 0.034689398686409696,
+   "naive": 0.5828980021566732,
+   "classical_first": 0.9653020926399623,
+   "union": 0.9999914913263722
+  },
+  {
+   "scenario": "optimistic",
+   "lam": 0.9,
+   "L": 30.0,
+   "counted": 0.03469031040983912,
+   "naive": 0.9612775979598908,
+   "classical_first": 0.9653096895900877,
+   "union": 0.9999999999999272
+  },
+  {
+   "scenario": "pessimistic",
+   "lam": 0.01,
+   "L": 3.0,
+   "counted": 0.03169155896807302,
+   "naive": 0.0323190397662968,
+   "classical_first": 0.029226775273198148,
+   "union": 0.060918334241271244
+  },
+  {
+   "scenario": "pessimistic",
+   "lam": 0.01,
+   "L": 12.0,
+   "counted": 0.3454769469562157,
+   "naive": 0.3722121908877123,
+   "classical_first": 0.09772521522020658,
+   "union": 0.4432021621764223
+  },
+  {
+   "scenario": "pessimistic",
+   "lam": 0.01,
+   "L": 30.0,
+   "counted": 0.8082599193723417,
+   "naive": 0.9318026279920216,
+   "classical_first": 0.141218224841539,
+   "union": 0.9494781442138802
+  },
+  {
+   "scenario": "pessimistic",
+   "lam": 0.2,
+   "L": 3.0,
+   "counted": 0.022057754603752453,
+   "naive": 0.0323190397662968,
+   "classical_first": 0.44686767439335107,
+   "union": 0.4689254289971029
+  },
+  {
+   "scenario": "pessimistic",
+   "lam": 0.2,
+   "L": 12.0,
+   "counted": 0.09945992166639536,
+   "naive": 0.3722121908877123,
+   "classical_first": 0.8435884531908941,
+   "union": 0.9430483748572889
+  },
+  {
+   "scenario": "pessimistic",
+   "lam": 0.2,
+   "L": 30.0,
+   "counted": 0.11734388189295472,
+   "naive": 0.9318026279920216,
+   "classical_first": 0.8824870737227378,
+   "union": 0.9998309556156924
+  },
+  {
+   "scenario": "pessimistic",
+   "lam": 0.9,
+   "L": 3.0,
+   "counted": 0.006932524799086536,
+   "naive": 0.0323190397662968,
+   "classical_first": 0.9280339800999173,
+   "union": 0.9349665048990006
+  },
+  {
+   "scenario": "pessimistic",
+   "lam": 0.9,
+   "L": 12.0,
+   "counted": 0.008866559984318017,
+   "naive": 0.3722121908877123,
+   "classical_first": 0.9911206334561318,
+   "union": 0.9999871934404465
+  },
+  {
+   "scenario": "pessimistic",
+   "lam": 0.9,
+   "L": 30.0,
+   "counted": 0.008867603983402255,
+   "naive": 0.9318026279920216,
+   "classical_first": 0.9911323960164755,
+   "union": 0.9999999999998718
+  }
+ ],
+ "lambda_star": [
+  {
+   "scenario": "optimistic",
+   "tau": 0.1,
+   "h": 0.5,
+   "L": 30.0,
+   "rho": 0.0,
+   "value": 0.033979349784738544
+  },
+  {
+   "scenario": "optimistic",
+   "tau": 1.0,
+   "h": 0.9,
+   "L": 10.0,
+   "rho": 0.0,
+   "value": 0.18454193363401555
+  },
+  {
+   "scenario": "optimistic",
+   "tau": 0.05,
+   "h": 0.5,
+   "L": 50.0,
+   "rho": 0.05,
+   "value": 0.013211560780214675
+  },
+  {
+   "scenario": "optimistic",
+   "tau": 0.3,
+   "h": 0.9,
+   "L": 5.0,
+   "rho": 0.02,
+   "value": 0.04913875279691446
+  },
+  {
+   "scenario": "pessimistic",
+   "tau": 0.1,
+   "h": 0.5,
+   "L": 30.0,
+   "rho": 0.0,
+   "value": 0.030608387445663358
+  },
+  {
+   "scenario": "pessimistic",
+   "tau": 1.0,
+   "h": 0.9,
+   "L": 10.0,
+   "rho": 0.0,
+   "value": 0.12180488979557479
+  },
+  {
+   "scenario": "pessimistic",
+   "tau": 0.05,
+   "h": 0.5,
+   "L": 50.0,
+   "rho": 0.05,
+   "value": 0.0107650632411923
+  },
+  {
+   "scenario": "pessimistic",
+   "tau": 0.3,
+   "h": 0.9,
+   "L": 5.0,
+   "rho": 0.02,
+   "value": 0.019842788134104096
+  }
+ ]
+}
