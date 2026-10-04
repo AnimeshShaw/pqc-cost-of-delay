@@ -12,6 +12,7 @@ authors:
   - family-names: Shaw
     given-names: Animesh
     email: animesh15b@iimk.edu.in
+doi: "10.5281/zenodo.23133467"
 repository-code: "https://github.com/AnimeshShaw/pqc-cost-of-delay"
 url: "https://animeshshaw.github.io/pqc-cost-of-delay/"
 version: 0.1.0

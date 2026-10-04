@@ -92,4 +92,4 @@ A large language model (Anthropic's Claude, via Claude Code) was used substantia
 
 ## Licence and citation
 
-Apache License 2.0 (`LICENSE`). Cite via [`CITATION.cff`](CITATION.cff).
+Apache License 2.0 (`LICENSE`). Cite via [`CITATION.cff`](CITATION.cff). Archived releases: [doi:10.5281/zenodo.23133467](https://doi.org/10.5281/zenodo.23133467) (all versions).
