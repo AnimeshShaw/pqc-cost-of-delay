@@ -40,7 +40,7 @@ python scripts/reproduce.py
 
 `reproduce.py` runs, in order: the test suite → numerical validation → the statistical analysis (`results/`) → the figures (`paper/figures/`, created if missing) → the parameter tables → the explorer's data and its cross-language check. It takes roughly 2–4 minutes and is deterministic (every random procedure has a fixed seed). Afterwards `git diff --stat results/` should show **no change**, or differences only in the last printed digit if your NumPy/SciPy versions differ. Exact tested versions are in `requirements-lock.txt`.
 
-To explore interactively, use the [live explorer](https://animeshshaw.github.io/pqc-cost-of-delay/) or open `app/index.html` locally. It needs no server and sends nothing anywhere.
+To explore interactively, use the [live explorer](https://animeshshaw.github.io/pqc-cost-of-delay/) or open `app/index.html` locally. It needs no server, and the page's code makes no network requests and sends your inputs nowhere (GitHub, as host, logs ordinary page visits).
 
 To score your own register:
 
