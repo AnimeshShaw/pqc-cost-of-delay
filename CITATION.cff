@@ -15,7 +15,7 @@ authors:
 repository-code: "https://github.com/AnimeshShaw/pqc-cost-of-delay"
 url: "https://animeshshaw.github.io/pqc-cost-of-delay/"
 version: 0.1.0
-date-released: 2026-10-03
+date-released: 2026-10-04
 license: Apache-2.0
 keywords:
   - post-quantum cryptography
