@@ -294,8 +294,7 @@ def fig_sensitivity():
         vals = [cost_of_delay(a, OPT, discount_rate=r).total for r in rhos]
         ax.plot(rhos * 100, np.array(vals) / 1e3, color=c, ls=ls, label=aid)
     ax.set_xlabel("discount rate $\\rho$ (%)"); ax.set_ylabel("cost of delay (k$ per year)"); panel_label(ax, "B")
-    fig.suptitle("OpenMRS: where the ordering changes", fontsize=9.2, y=1.0)
-    fig.tight_layout()
+    fig.tight_layout()   # no title inside the figure: the caption names the system (journal requirement)
     save(fig, "fig08_scenario_and_discount_sensitivity")
 
 
