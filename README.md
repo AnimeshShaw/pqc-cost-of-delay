@@ -1,6 +1,6 @@
 # Cost of Delay for Post-Quantum Migration
 
-**[Live explorer](https://animeshshaw.github.io/pqc-cost-of-delay/)** · reference implementation, proofs, case studies and statistics for a research paper.
+**[Live explorer](https://animeshshaw.github.io/pqc-cost-of-delay/)** · **[Preprint (arXiv:2610.09029)](https://arxiv.org/abs/2610.09029)** · reference implementation, proofs, case studies and statistics for a research paper.
 
 Classical hacking risk and *harvest-now-decrypt-later* (HNDL) quantum risk, expressed in one unit — **US dollars of loss per year of delay** — so a single ordered list can answer *"should we close this classical finding, or migrate that asset's cryptography first?"*
 
@@ -92,4 +92,4 @@ A large language model (Anthropic's Claude, via Claude Code) was used substantia
 
 ## Licence and citation
 
-Apache License 2.0 (`LICENSE`). Cite via [`CITATION.cff`](CITATION.cff). Archived releases: [doi:10.5281/zenodo.23133467](https://doi.org/10.5281/zenodo.23133467) (all versions).
+Apache License 2.0 (`LICENSE`). Cite via [`CITATION.cff`](CITATION.cff); the preferred citation is the preprint [arXiv:2610.09029](https://arxiv.org/abs/2610.09029). Archived releases: [doi:10.5281/zenodo.23133467](https://doi.org/10.5281/zenodo.23133467) (all versions).

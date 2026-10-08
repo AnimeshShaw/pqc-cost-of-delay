@@ -25,3 +25,13 @@ keywords:
   - cost of delay
   - threat modelling
   - migration planning
+preferred-citation:
+  type: article
+  title: "Cost of Delay for Post-Quantum Migration: Putting Classical and Harvest-Now-Decrypt-Later Risk on One Ordered List"
+  authors:
+    - family-names: Shaw
+      given-names: Animesh
+  journal: "arXiv preprint arXiv:2610.09029"
+  year: 2026
+  doi: "10.48550/arXiv.2610.09029"
+  url: "https://arxiv.org/abs/2610.09029"
